@@ -88,16 +88,18 @@ class ResidualBlock(nn.Module):
 
 # Fungsi untuk Mengenkripsi Data
 def encrypt(data, key):
-    cipher = Crypto.Cipher.AES.new(key, Crypto.Cipher.AES.MODE_EAX)
+    cipher = AES.new(key, AES.MODE_EAX)
     nonce = cipher.nonce
     ciphertext, tag = cipher.encrypt_and_digest(data)
-    return nonce, ciphertext, tag
+    return nonce + ciphertext + tag
 
 # Fungsi untuk Mendekripsi Data
-def decrypt(nonce, ciphertext, tag, key):
-    cipher = Crypto.Cipher.AES.new(key, Crypto.Cipher.AES.MODE_EAX,nonce=nonce)
-    data = cipher.decrypt_and_verify(ciphertext, tag)
-    return data
+def decrypt(encrypted_data, key):
+    nonce = encrypted_data[:16]
+    tag = encrypted_data[-16:]
+    ciphertext = encrypted_data[16:-16]
+    cipher = AES.new(key, AES.MODE_EAX, nonce=nonce)
+    return cipher.decrypt_and_verify(ciphertext, tag)
 
 # Fungsi untuk menggabungkan pembaruan model (Federated Averaging)
 def federated_averaging(global_model, client_models, client_weights):
@@ -119,25 +121,35 @@ def handle_client(conn, addr, global_model, client_models, client_weights,client
     
     try:
         # Menerima model dari klien
-        nonce = conn.recv(16) # Panjang nonce AES
-        ciphertext = conn.recv(4096) # Ukuran buffer
-        tag = conn.recv(16) # Panjang tag MAC
-        decrypted_data = decrypt(nonce, ciphertext, tag, KEY)
-        client_model = pickle.loads(decrypted_data)
+        encrypted_data = b''
+        while True:
+            chunk = conn.recv(65536)
+            if not chunk:
+                break
+            encrypted_data += chunk
+        
+        if not encrypted_data:
+            raise ValueError("Data kosong")
+        
+        decrypted_data = decrypt(encrypted_data, KEY)
+        with open('temp_model.pt', 'wb') as f:
+            f.write(decrypted_data)
+        
+        client_model = EcgResNet34()
+        client_model.load_state_dict(torch.load('temp_model.pt'))
         
         client_models[client_index] = client_model
         
         # Lakukan Federated Averaging jika kita sudah menerima dari semua klien
         if all(model is not None for model in client_models):
             federated_averaging(global_model, client_models, client_weights)
-            print("Model global telah diperbarui.")
             
             # Kirim kembali model global yang sudah diperbarui ke klien
-            model_data = pickle.dumps(global_model)
-            nonce, ciphertext, tag = encrypt(model_data, KEY)
-            conn.sendall(nonce)
-            conn.sendall(ciphertext)
-            conn.sendall(tag)
+            torch.save(global_model.state_dict(), 'global_model.pt')
+            with open('global_model.pt', 'rb') as f:
+                global_bytes = f.read()
+            encrypted_response = encrypt(global_bytes, KEY)
+            conn.sendall(encrypted_response)
         
     except Exception as e:
         print(f"Error handling client: {e}")

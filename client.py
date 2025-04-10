@@ -134,16 +134,18 @@ def load_mitbih_data(client_id, resample_size=128):
 
 # Fungsi untuk Mengenkripsi Data
 def encrypt(data, key):
-    cipher = Crypto.Cipher.AES.new(key, Crypto.Cipher.AES.MODE_EAX)
+    cipher = AES.new(key, AES.MODE_EAX)
     nonce = cipher.nonce
     ciphertext, tag = cipher.encrypt_and_digest(data)
-    return nonce, ciphertext, tag
+    return nonce + ciphertext + tag
 
 # Fungsi untuk Mendekripsi Data
-def decrypt(nonce, ciphertext, tag, key):
-    cipher = Crypto.Cipher.AES.new(key, Crypto.Cipher.AES.MODE_EAX,nonce=nonce)
-    data = cipher.decrypt_and_verify(ciphertext, tag)
-    return data
+def decrypt(encrypted_data, key):
+    nonce = encrypted_data[:16]
+    tag = encrypted_data[-16:]
+    ciphertext = encrypted_data[16:-16]
+    cipher = AES.new(key, AES.MODE_EAX, nonce=nonce)
+    return cipher.decrypt_and_verify(ciphertext, tag)
 
 # Fungsi untuk melatih model lokal
 def train_local_model(model, train_loader, epochs=10, learning_rate=0.001):
@@ -208,22 +210,27 @@ if __name__ == '__main__':
             trained_model = add_noise(trained_model, sensitivity, epsilon)
 
             # Kirim Model ke Server
-            model_data = pickle.dumps(trained_model) # Serialisasi model
+            model_data = torch.save(trained_model.state_dict(), 'temp_model.pt')
+            with open('temp_model.pt', 'rb') as f:
+                model_bytes = f.read()
+            encrypted_data = encrypt(model_bytes, KEY)
 
-            # Enkripsi model
-            nonce, ciphertext, tag = encrypt(model_data, KEY)
+            # Kirim data terenkripsi ke server
+            s.sendall(encrypted_data)
 
-            # Kirim data yang sudah dienkripsi
-            s.sendall(nonce)
-            s.sendall(ciphertext)
-            s.sendall(tag)
-
-            # Menerima model global yang sudah diperbarui dari server
-            nonce = s.recv(16) # Panjang nonce AES
-            ciphertext = s.recv(4096) # Ukuran buffer
-            tag = s.recv(16) # Panjang tag MAC
-            decrypted_data = decrypt(nonce, ciphertext, tag, KEY)
-            updated_global_model = pickle.loads(decrypted_data)
+            encrypted_response = b''
+            while True:
+                chunk = s.recv(65536)
+                if not chunk:
+                    break
+                encrypted_response += chunk
+                
+            # Deskripsi Respon
+            decrypted_data = decrypt(encrypted_response, KEY)
+            with open('global_model.pt', 'wb') as f:
+                f.write(decrypted_data)
+            updated_global_model = EcgResNet34()
+            updated_global_model.load_state_dict(torch.load('global_model.pt'))
 
         except Exception as e:
             print(f"Error: {e}")
