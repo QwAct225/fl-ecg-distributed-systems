@@ -12,6 +12,7 @@ import Crypto
 from Crypto.Cipher import AES
 import os
 import wfdb
+import sys
 
 # Konfigurasi Klien
 HOST = '127.0.0.1' # Loopback address (harus sama dengan server)
@@ -178,7 +179,10 @@ def add_noise(model, sensitivity, epsilon):
     return model
 
 if __name__ == '__main__':
-    client_id = 1 # Ganti dengan ID klien yang sesuai (1 atau 2)
+    if len(sys.argv) != 2:
+        print("Error: Gunakan perintah -> python client.py <client_id>")
+        sys.exit(1)
+    client_id = int(sys.argv[1])
     print(f"Klien {client_id} dimulai...")
 
     # Muat Data Lokal
@@ -198,6 +202,7 @@ if __name__ == '__main__':
     # Koneksi ke Server
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         try:
+            s.settimeout(60)
             s.connect((HOST, PORT))
             print(f"Terhubung ke server di {HOST}:{PORT}")
 
@@ -210,7 +215,7 @@ if __name__ == '__main__':
             trained_model = add_noise(trained_model, sensitivity, epsilon)
 
             # Kirim Model ke Server
-            model_data = torch.save(trained_model.state_dict(), 'temp_model.pt')
+            torch.save(trained_model.state_dict(), 'temp_model.pt')
             with open('temp_model.pt', 'rb') as f:
                 model_bytes = f.read()
             encrypted_data = encrypt(model_bytes, KEY)

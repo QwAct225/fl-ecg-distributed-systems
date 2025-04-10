@@ -116,7 +116,7 @@ def federated_averaging(global_model, client_models, client_weights):
     return global_model
 
 # Fungsi untuk menangani setiap koneksi klien
-def handle_client(conn, addr, global_model, client_models, client_weights,client_index):
+def handle_client(conn, addr, global_model, client_models, client_weights, client_index):
     print(f"Terhubung oleh {addr}")
     
     try:
@@ -142,9 +142,10 @@ def handle_client(conn, addr, global_model, client_models, client_weights,client
         
         # Lakukan Federated Averaging jika kita sudah menerima dari semua klien
         if all(model is not None for model in client_models):
+            # Lakukan agregasi
             federated_averaging(global_model, client_models, client_weights)
             
-            # Kirim kembali model global yang sudah diperbarui ke klien
+            # Kirim model global kembali ke klien
             torch.save(global_model.state_dict(), 'global_model.pt')
             with open('global_model.pt', 'rb') as f:
                 global_bytes = f.read()
@@ -167,6 +168,7 @@ if __name__ == '__main__':
 
     # Buat socket TCP
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.settimeout(60)
         s.bind((HOST, PORT))
         s.listen()
         print(f"Server mendengarkan di {HOST}:{PORT}")
