@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from sklearn.model_selection import train_test_split
-from scipy.io import loadmat
+from scipy.io import loadmat, savemat
 import numpy as np
 from scipy.signal import find_peaks
 import pickle
@@ -93,22 +93,40 @@ class ResidualBlock(nn.Module):
 
 # Fungsi untuk memuat dan memproses data MIT-BIH
 def load_mitbih_data(client_id, resample_size=128):
-    record = wfdb.rdrecord('mit-bih/100', channels=[0])
-    signal = record.p_signal[:, 0]
-    annotations = wfdb.rdann('mit-bih/100', 'atr')
+    mat_file_path = "mit-bih/100.mat"
+    
+    # Jika file .mat belum ada, konversi dari WFDB
+    if not os.path.exists(mat_file_path):
+        # Baca data dari WFDB
+        record = wfdb.rdrecord('mit-bih/100', channels=[0])
+        signal = record.p_signal[:, 0]
+        annotations = wfdb.rdann('mit-bih/100', 'atr')
 
-    label_map = {'N': 0, 'L': 1, 'R': 2, 'V': 3, 'A': 4}
-    labels = np.zeros(len(signal), dtype=int)
-    for ann_sample, ann_symbol in zip(annotations.sample, annotations.symbol):
-        if ann_symbol in label_map and ann_sample < len(labels):
-            labels[ann_sample] = label_map[ann_symbol]
+        # Proses label (sama seperti sebelumnya)
+        label_map = {'N': 0, 'L': 1, 'R': 2, 'V': 3, 'A': 4}
+        labels = np.zeros(len(signal), dtype=int)
+        for ann_sample, ann_symbol in zip(annotations.sample, annotations.symbol):
+            if ann_symbol in label_map and ann_sample < len(labels):
+                labels[ann_sample] = label_map[ann_symbol]
 
+        # Simpan ke .mat
+        os.makedirs(os.path.dirname(mat_file_path), exist_ok=True)
+        savemat(mat_file_path, {'val': signal, 'label': labels})
+        print("File .mat berhasil dibuat dari data WFDB.")
+    
+    # Baca dari .mat
+    data = loadmat(mat_file_path)
+    signal = data['val'][0]
+    labels = data['label'][0]
+
+    # Pembagian data untuk klien
+    split_idx = len(signal) // 2
     if client_id == 1:
-        signal = signal[:len(signal) // 2]
-        labels = labels[:len(labels) // 2]
+        signal = signal[:split_idx]
+        labels = labels[:split_idx]
     else:
-        signal = signal[len(signal) // 2:]
-        labels = labels[len(signal) // 2:]
+        signal = signal[split_idx:]
+        labels = labels[split_idx:]
 
     signal = (signal - np.mean(signal)) / np.std(signal)
 
