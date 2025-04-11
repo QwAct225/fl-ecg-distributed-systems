@@ -15,26 +15,27 @@ import wfdb
 import sys
 
 # Konfigurasi Klien
-HOST = '127.0.0.1' # Loopback address (harus sama dengan server)
-PORT = 65432 # Port server (harus sama dengan server)
-KEY = b'Sixteen byte key' # Kunci Enkripsi (harus sama dengan server!)
+HOST = '127.0.0.1'  # Loopback address (harus sama dengan server)
+PORT = 65432  # Port server (harus sama dengan server)
+KEY = b'Sixteen byte key'  # Kunci Enkripsi (harus sama dengan server!)
+
 
 # Definisi Model (Harus sama dengan server!)
 # Di global_server.py dan client.py
 class EcgResNet34(nn.Module):
-    def __init__(self, input_channels=1):
+    def __init__(self, input_channels=2):
         super(EcgResNet34, self).__init__()
         self.conv1 = nn.Conv1d(input_channels, 64, kernel_size=7, stride=2, padding=3)
         self.bn1 = nn.BatchNorm1d(64)
         self.relu = nn.ReLU()
         self.maxpool = nn.MaxPool1d(kernel_size=3, stride=2, padding=1)
-        
+
         # Blok Residual
         self.layer1 = self._make_layer(64, 64, 3)
         self.layer2 = self._make_layer(64, 128, 4, stride=2)
         self.layer3 = self._make_layer(128, 256, 6, stride=2)
         self.layer4 = self._make_layer(256, 512, 3, stride=2)
-        
+
         self.avgpool = nn.AdaptiveAvgPool1d(1)
         self.fc = nn.Linear(512, 5)  # 5 kelas
 
@@ -50,16 +51,17 @@ class EcgResNet34(nn.Module):
         x = self.bn1(x)
         x = self.relu(x)
         x = self.maxpool(x)
-        
+
         x = self.layer1(x)
         x = self.layer2(x)
         x = self.layer3(x)
         x = self.layer4(x)
-        
+
         x = self.avgpool(x)
         x = torch.flatten(x, 1)
         x = self.fc(x)
         return x
+
 
 class ResidualBlock(nn.Module):
     def __init__(self, in_channels, out_channels, stride=1):
@@ -69,7 +71,7 @@ class ResidualBlock(nn.Module):
         self.relu = nn.ReLU()
         self.conv2 = nn.Conv1d(out_channels, out_channels, kernel_size=3, padding=1)
         self.bn2 = nn.BatchNorm1d(out_channels)
-        
+
         self.shortcut = nn.Sequential()
         if stride != 1 or in_channels != out_channels:
             self.shortcut = nn.Sequential(
@@ -88,50 +90,53 @@ class ResidualBlock(nn.Module):
         x = self.relu(x)
         return x
 
+
 # Fungsi untuk memuat dan memproses data MIT-BIH
 def load_mitbih_data(client_id, resample_size=128):
     record = wfdb.rdrecord('mit-bih/100', channels=[0])
     signal = record.p_signal[:, 0]
     annotations = wfdb.rdann('mit-bih/100', 'atr')
 
-    # Ekstrak label (5 kelas: N, L, R, V, A)
     label_map = {'N': 0, 'L': 1, 'R': 2, 'V': 3, 'A': 4}
     labels = np.zeros(len(signal), dtype=int)
     for ann_sample, ann_symbol in zip(annotations.sample, annotations.symbol):
         if ann_symbol in label_map and ann_sample < len(labels):
             labels[ann_sample] = label_map[ann_symbol]
 
-    # Pembagian data untuk klien
     if client_id == 1:
-        signal = signal[:len(signal)//2]
-        labels = labels[:len(labels)//2]
+        signal = signal[:len(signal) // 2]
+        labels = labels[:len(labels) // 2]
     else:
-        signal = signal[len(signal)//2:]
-        labels = labels[len(signal)//2:]
+        signal = signal[len(signal) // 2:]
+        labels = labels[len(signal) // 2:]
 
-    # Normalisasi
     signal = (signal - np.mean(signal)) / np.std(signal)
 
-    # Deteksi Puncak R dan Ekstraksi Window Sinyal Mentah
     peaks, _ = find_peaks(signal, distance=50)
     features = []
     feature_labels = []
-    for peak_index in peaks:
-        start = max(0, peak_index - resample_size//2)
-        end = min(len(signal), peak_index + resample_size//2)
+    for i in range(1, len(peaks)):
+        peak_index = peaks[i]
+        prev_peak = peaks[i - 1]
+        rri = peak_index - prev_peak  # hitung R-R interval
+
+        start = max(0, peak_index - resample_size // 2)
+        end = min(len(signal), peak_index + resample_size // 2)
         window = signal[start:end]
 
-        # Padding atau Truncate ke 128 titik
         if len(window) < resample_size:
             window = np.pad(window, (0, resample_size - len(window)))
         elif len(window) > resample_size:
             window = window[:resample_size]
-        features.append(window)
+
+        rri_channel = np.full_like(window, rri / 1000.0)  # Normalisasi RRI
+        multi_channel_window = np.stack([window, rri_channel], axis=0)  # [2, 128]
+        features.append(multi_channel_window)
         feature_labels.append(labels[peak_index])
 
-    # Reshape ke [samples, 1, 128] untuk Conv1d
-    features = np.array(features).reshape(-1, 1, resample_size)
+    features = np.array(features)  # [samples, 2, 128]
     return torch.tensor(features, dtype=torch.float32), torch.tensor(feature_labels)
+
 
 # Fungsi untuk Mengenkripsi Data
 def encrypt(data, key):
@@ -140,6 +145,7 @@ def encrypt(data, key):
     ciphertext, tag = cipher.encrypt_and_digest(data)
     return nonce + ciphertext + tag
 
+
 # Fungsi untuk Mendekripsi Data
 def decrypt(encrypted_data, key):
     nonce = encrypted_data[:16]
@@ -147,6 +153,7 @@ def decrypt(encrypted_data, key):
     ciphertext = encrypted_data[16:-16]
     cipher = AES.new(key, AES.MODE_EAX, nonce=nonce)
     return cipher.decrypt_and_verify(ciphertext, tag)
+
 
 # Fungsi untuk melatih model lokal
 def train_local_model(model, train_loader, epochs=10, learning_rate=0.001):
@@ -165,9 +172,10 @@ def train_local_model(model, train_loader, epochs=10, learning_rate=0.001):
             optimizer.step()
 
             if (i + 1) % 100 == 0:
-                print(f'Epoch [{epoch+1}/{epochs}], Step [{i+1}], Loss: {loss.item():.4f}')
+                print(f'Epoch [{epoch + 1}/{epochs}], Step [{i + 1}], Loss: {loss.item():.4f}')
 
     return model
+
 
 # Fungsi untuk menambahkan noise (Differential Privacy sederhana)
 def add_noise(model, sensitivity, epsilon):
@@ -178,6 +186,7 @@ def add_noise(model, sensitivity, epsilon):
             param.add_(noise)
     return model
 
+
 if __name__ == '__main__':
     if len(sys.argv) != 2:
         print("Error: Gunakan perintah -> python client.py <client_id>")
@@ -187,7 +196,7 @@ if __name__ == '__main__':
 
     # Muat Data Lokal
     features, labels = load_mitbih_data(client_id)
-    
+
     # Ubah data menjadi format yang sesuai untuk PyTorch
     X_train = features.clone().detach()  # Gunakan clone().detach()
     y_train = labels.clone().detach()
@@ -210,8 +219,8 @@ if __name__ == '__main__':
             trained_model = train_local_model(local_model, train_loader)
 
             # Tambahkan Noise (Differential Privacy - Sederhana!)
-            sensitivity = 0.1 # Sesuaikan
-            epsilon = 1.0 # Sesuaikan
+            sensitivity = 0.1  # Sesuaikan
+            epsilon = 1.0  # Sesuaikan
             trained_model = add_noise(trained_model, sensitivity, epsilon)
 
             # Kirim Model ke Server
@@ -229,7 +238,7 @@ if __name__ == '__main__':
                 if not chunk:
                     break
                 encrypted_response += chunk
-                
+
             # Deskripsi Respon
             decrypted_data = decrypt(encrypted_response, KEY)
             with open('global_model.pt', 'wb') as f:
