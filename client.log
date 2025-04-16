@@ -1,0 +1,1808 @@
+2025-04-11 09:05:40,389 - Client - INFO - Klien 1 dimulai...
+2025-04-11 09:05:40,389 - Client - INFO - File .mat tidak ditemukan, membuat dari WFDB...
+2025-04-11 09:05:40,448 - Client - INFO - File .mat berhasil dibuat dari data WFDB.
+2025-04-11 09:05:40,448 - Client - INFO - Memuat data dari mit-bih/100_1.mat
+2025-04-11 09:05:40,469 - Client - INFO - Mulai ekstraksi fitur dengan 4970 puncak R terdeteksi
+2025-04-11 09:05:40,542 - Client - INFO - Ekstraksi selesai: 4968 sampel dengan bentuk (4968, 2, 128)
+2025-04-11 09:05:40,551 - Client - INFO - Data dimuat: torch.Size([4968, 2, 128]) features, torch.Size([4968]) labels
+2025-04-11 09:05:40,561 - Client - INFO - Data dibagi: 3974 training samples, 994 validation samples
+2025-04-11 09:05:40,652 - Client - INFO - Model lokal diinisialisasi
+2025-04-11 09:05:40,653 - Client - INFO - Terhubung ke server di 127.0.0.1:65432
+2025-04-11 09:05:40,813 - Client - INFO - Bersiap menerima model global ukuran 29599995 bytes
+2025-04-11 09:05:40,813 - Client - INFO - Menerima 29599995 bytes data
+2025-04-11 09:05:40,858 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29534459 bytes
+2025-04-11 09:05:40,858 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29468923 bytes
+2025-04-11 09:05:40,859 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29403387 bytes
+2025-04-11 09:05:40,860 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29337851 bytes
+2025-04-11 09:05:40,860 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29272315 bytes
+2025-04-11 09:05:40,860 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29206779 bytes
+2025-04-11 09:05:40,861 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29141243 bytes
+2025-04-11 09:05:40,861 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29075707 bytes
+2025-04-11 09:05:40,861 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29010171 bytes
+2025-04-11 09:05:40,861 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28944635 bytes
+2025-04-11 09:05:40,861 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28879099 bytes
+2025-04-11 09:05:40,862 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28813563 bytes
+2025-04-11 09:05:40,862 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28748027 bytes
+2025-04-11 09:05:40,862 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28682491 bytes
+2025-04-11 09:05:40,862 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28616955 bytes
+2025-04-11 09:05:40,863 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28551419 bytes
+2025-04-11 09:05:40,863 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28485883 bytes
+2025-04-11 09:05:40,864 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28420347 bytes
+2025-04-11 09:05:40,865 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28354811 bytes
+2025-04-11 09:05:40,865 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28289275 bytes
+2025-04-11 09:05:40,866 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28223739 bytes
+2025-04-11 09:05:40,866 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28158203 bytes
+2025-04-11 09:05:40,867 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28092667 bytes
+2025-04-11 09:05:40,867 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28027131 bytes
+2025-04-11 09:05:40,868 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27961595 bytes
+2025-04-11 09:05:40,868 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27896059 bytes
+2025-04-11 09:05:40,869 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27830523 bytes
+2025-04-11 09:05:40,870 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27764987 bytes
+2025-04-11 09:05:40,870 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27699451 bytes
+2025-04-11 09:05:40,871 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27633915 bytes
+2025-04-11 09:05:40,871 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27568379 bytes
+2025-04-11 09:05:40,872 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27502843 bytes
+2025-04-11 09:05:40,873 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27437307 bytes
+2025-04-11 09:05:40,873 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27371771 bytes
+2025-04-11 09:05:40,874 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27306235 bytes
+2025-04-11 09:05:40,875 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27240699 bytes
+2025-04-11 09:05:40,876 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27175163 bytes
+2025-04-11 09:05:40,876 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27109627 bytes
+2025-04-11 09:05:40,877 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27044091 bytes
+2025-04-11 09:05:40,878 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26978555 bytes
+2025-04-11 09:05:40,879 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26913019 bytes
+2025-04-11 09:05:40,879 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26847483 bytes
+2025-04-11 09:05:40,880 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26781947 bytes
+2025-04-11 09:05:40,882 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26716411 bytes
+2025-04-11 09:05:40,882 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26650875 bytes
+2025-04-11 09:05:40,883 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26585339 bytes
+2025-04-11 09:05:40,884 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26519803 bytes
+2025-04-11 09:05:40,885 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26454267 bytes
+2025-04-11 09:05:40,885 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26388731 bytes
+2025-04-11 09:05:40,886 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26323195 bytes
+2025-04-11 09:05:40,887 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26257659 bytes
+2025-04-11 09:05:40,888 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26192123 bytes
+2025-04-11 09:05:40,889 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26126587 bytes
+2025-04-11 09:05:40,890 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26061051 bytes
+2025-04-11 09:05:40,891 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25995515 bytes
+2025-04-11 09:05:40,892 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25929979 bytes
+2025-04-11 09:05:40,892 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25864443 bytes
+2025-04-11 09:05:40,893 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25798907 bytes
+2025-04-11 09:05:40,894 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25733371 bytes
+2025-04-11 09:05:40,895 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25667835 bytes
+2025-04-11 09:05:40,896 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25602299 bytes
+2025-04-11 09:05:40,897 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25536763 bytes
+2025-04-11 09:05:40,899 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25471227 bytes
+2025-04-11 09:05:40,900 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25405691 bytes
+2025-04-11 09:05:40,901 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25340155 bytes
+2025-04-11 09:05:40,902 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25274619 bytes
+2025-04-11 09:05:40,903 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25209083 bytes
+2025-04-11 09:05:40,904 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25143547 bytes
+2025-04-11 09:05:40,905 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25078011 bytes
+2025-04-11 09:05:40,906 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25012475 bytes
+2025-04-11 09:05:40,908 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24946939 bytes
+2025-04-11 09:05:40,909 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24881403 bytes
+2025-04-11 09:05:40,910 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24815867 bytes
+2025-04-11 09:05:40,911 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24750331 bytes
+2025-04-11 09:05:40,912 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24684795 bytes
+2025-04-11 09:05:40,913 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24619259 bytes
+2025-04-11 09:05:40,914 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24553723 bytes
+2025-04-11 09:05:40,915 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24488187 bytes
+2025-04-11 09:05:40,917 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24422651 bytes
+2025-04-11 09:05:40,918 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24357115 bytes
+2025-04-11 09:05:40,919 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24291579 bytes
+2025-04-11 09:05:40,921 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24226043 bytes
+2025-04-11 09:05:40,923 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24160507 bytes
+2025-04-11 09:05:40,924 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24094971 bytes
+2025-04-11 09:05:40,926 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24029435 bytes
+2025-04-11 09:05:40,927 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23963899 bytes
+2025-04-11 09:05:40,928 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23898363 bytes
+2025-04-11 09:05:40,930 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23832827 bytes
+2025-04-11 09:05:40,931 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23767291 bytes
+2025-04-11 09:05:40,932 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23701755 bytes
+2025-04-11 09:05:40,934 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23636219 bytes
+2025-04-11 09:05:40,935 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23570683 bytes
+2025-04-11 09:05:40,937 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23505147 bytes
+2025-04-11 09:05:40,939 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23439611 bytes
+2025-04-11 09:05:40,940 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23374075 bytes
+2025-04-11 09:05:40,942 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23308539 bytes
+2025-04-11 09:05:40,943 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23243003 bytes
+2025-04-11 09:05:40,946 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23177467 bytes
+2025-04-11 09:05:40,947 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23111931 bytes
+2025-04-11 09:05:40,949 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23046395 bytes
+2025-04-11 09:05:40,950 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22980859 bytes
+2025-04-11 09:05:40,952 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22915323 bytes
+2025-04-11 09:05:40,954 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22849787 bytes
+2025-04-11 09:05:40,955 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22784251 bytes
+2025-04-11 09:05:40,956 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22718715 bytes
+2025-04-11 09:05:40,958 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22653179 bytes
+2025-04-11 09:05:40,960 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22587643 bytes
+2025-04-11 09:05:40,962 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22522107 bytes
+2025-04-11 09:05:40,963 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22456571 bytes
+2025-04-11 09:05:40,964 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22391035 bytes
+2025-04-11 09:05:40,966 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22325499 bytes
+2025-04-11 09:05:40,967 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22259963 bytes
+2025-04-11 09:05:40,968 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22194427 bytes
+2025-04-11 09:05:40,971 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22128891 bytes
+2025-04-11 09:05:40,973 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22063355 bytes
+2025-04-11 09:05:40,974 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21997819 bytes
+2025-04-11 09:05:40,975 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21932283 bytes
+2025-04-11 09:05:40,977 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21866747 bytes
+2025-04-11 09:05:40,979 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21801211 bytes
+2025-04-11 09:05:40,980 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21735675 bytes
+2025-04-11 09:05:40,982 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21670139 bytes
+2025-04-11 09:05:40,984 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21604603 bytes
+2025-04-11 09:05:40,987 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21539067 bytes
+2025-04-11 09:05:40,989 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21473531 bytes
+2025-04-11 09:05:40,991 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21407995 bytes
+2025-04-11 09:05:40,994 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21342459 bytes
+2025-04-11 09:05:40,995 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21276923 bytes
+2025-04-11 09:05:40,997 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21211387 bytes
+2025-04-11 09:05:40,999 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21145851 bytes
+2025-04-11 09:05:41,000 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21080315 bytes
+2025-04-11 09:05:41,002 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21014779 bytes
+2025-04-11 09:05:41,004 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20949243 bytes
+2025-04-11 09:05:41,006 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20883707 bytes
+2025-04-11 09:05:41,007 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20818171 bytes
+2025-04-11 09:05:41,009 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20752635 bytes
+2025-04-11 09:05:41,011 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20687099 bytes
+2025-04-11 09:05:41,013 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20621563 bytes
+2025-04-11 09:05:41,015 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20556027 bytes
+2025-04-11 09:05:41,017 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20490491 bytes
+2025-04-11 09:05:41,018 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20424955 bytes
+2025-04-11 09:05:41,020 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20359419 bytes
+2025-04-11 09:05:41,022 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20293883 bytes
+2025-04-11 09:05:41,023 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20228347 bytes
+2025-04-11 09:05:41,025 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20162811 bytes
+2025-04-11 09:05:41,027 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20097275 bytes
+2025-04-11 09:05:41,029 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20031739 bytes
+2025-04-11 09:05:41,031 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19966203 bytes
+2025-04-11 09:05:41,033 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19900667 bytes
+2025-04-11 09:05:41,035 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19835131 bytes
+2025-04-11 09:05:41,037 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19769595 bytes
+2025-04-11 09:05:41,039 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19704059 bytes
+2025-04-11 09:05:41,040 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19638523 bytes
+2025-04-11 09:05:41,042 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19572987 bytes
+2025-04-11 09:05:41,044 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19507451 bytes
+2025-04-11 09:05:41,046 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19441915 bytes
+2025-04-11 09:05:41,048 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19376379 bytes
+2025-04-11 09:05:41,050 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19310843 bytes
+2025-04-11 09:05:41,051 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19245307 bytes
+2025-04-11 09:05:41,053 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19179771 bytes
+2025-04-11 09:05:41,055 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19114235 bytes
+2025-04-11 09:05:41,056 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19048699 bytes
+2025-04-11 09:05:41,058 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18983163 bytes
+2025-04-11 09:05:41,061 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18917627 bytes
+2025-04-11 09:05:41,062 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18852091 bytes
+2025-04-11 09:05:41,064 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18786555 bytes
+2025-04-11 09:05:41,067 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18721019 bytes
+2025-04-11 09:05:41,069 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18655483 bytes
+2025-04-11 09:05:41,071 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18589947 bytes
+2025-04-11 09:05:41,073 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18524411 bytes
+2025-04-11 09:05:41,075 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18458875 bytes
+2025-04-11 09:05:41,077 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18393339 bytes
+2025-04-11 09:05:41,079 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18327803 bytes
+2025-04-11 09:05:41,081 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18262267 bytes
+2025-04-11 09:05:41,083 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18196731 bytes
+2025-04-11 09:05:41,085 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18131195 bytes
+2025-04-11 09:05:41,087 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18065659 bytes
+2025-04-11 09:05:41,089 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18000123 bytes
+2025-04-11 09:05:41,091 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17934587 bytes
+2025-04-11 09:05:41,094 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17869051 bytes
+2025-04-11 09:05:41,096 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17803515 bytes
+2025-04-11 09:05:41,098 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17737979 bytes
+2025-04-11 09:05:41,100 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17672443 bytes
+2025-04-11 09:05:41,102 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17606907 bytes
+2025-04-11 09:05:41,104 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17541371 bytes
+2025-04-11 09:05:41,107 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17475835 bytes
+2025-04-11 09:05:41,109 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17410299 bytes
+2025-04-11 09:05:41,111 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17344763 bytes
+2025-04-11 09:05:41,113 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17279227 bytes
+2025-04-11 09:05:41,115 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17213691 bytes
+2025-04-11 09:05:41,117 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17148155 bytes
+2025-04-11 09:05:41,119 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17082619 bytes
+2025-04-11 09:05:41,122 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17017083 bytes
+2025-04-11 09:05:41,124 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16951547 bytes
+2025-04-11 09:05:41,127 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16886011 bytes
+2025-04-11 09:05:41,129 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16820475 bytes
+2025-04-11 09:05:41,131 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16754939 bytes
+2025-04-11 09:05:41,133 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16689403 bytes
+2025-04-11 09:05:41,135 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16623867 bytes
+2025-04-11 09:05:41,138 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16558331 bytes
+2025-04-11 09:05:41,140 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16492795 bytes
+2025-04-11 09:05:41,143 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16427259 bytes
+2025-04-11 09:05:41,145 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16361723 bytes
+2025-04-11 09:05:41,148 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16296187 bytes
+2025-04-11 09:05:41,150 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16230651 bytes
+2025-04-11 09:05:41,152 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16165115 bytes
+2025-04-11 09:05:41,154 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16099579 bytes
+2025-04-11 09:05:41,157 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16034043 bytes
+2025-04-11 09:05:41,159 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15968507 bytes
+2025-04-11 09:05:41,161 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15902971 bytes
+2025-04-11 09:05:41,164 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15837435 bytes
+2025-04-11 09:05:41,166 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15771899 bytes
+2025-04-11 09:05:41,169 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15706363 bytes
+2025-04-11 09:05:41,171 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15640827 bytes
+2025-04-11 09:05:41,173 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15575291 bytes
+2025-04-11 09:05:41,176 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15509755 bytes
+2025-04-11 09:05:41,178 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15444219 bytes
+2025-04-11 09:05:41,181 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15378683 bytes
+2025-04-11 09:05:41,183 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15313147 bytes
+2025-04-11 09:05:41,186 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15247611 bytes
+2025-04-11 09:05:41,188 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15182075 bytes
+2025-04-11 09:05:41,191 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15116539 bytes
+2025-04-11 09:05:41,194 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15051003 bytes
+2025-04-11 09:05:41,196 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14985467 bytes
+2025-04-11 09:05:41,199 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14919931 bytes
+2025-04-11 09:05:41,202 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14854395 bytes
+2025-04-11 09:05:41,204 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14788859 bytes
+2025-04-11 09:05:41,207 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14723323 bytes
+2025-04-11 09:05:41,210 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14657787 bytes
+2025-04-11 09:05:41,212 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14592251 bytes
+2025-04-11 09:05:41,214 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14526715 bytes
+2025-04-11 09:05:41,217 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14461179 bytes
+2025-04-11 09:05:41,220 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14395643 bytes
+2025-04-11 09:05:41,222 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14330107 bytes
+2025-04-11 09:05:41,225 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14264571 bytes
+2025-04-11 09:05:41,227 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14199035 bytes
+2025-04-11 09:05:41,230 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14133499 bytes
+2025-04-11 09:05:41,233 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14067963 bytes
+2025-04-11 09:05:41,235 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14002427 bytes
+2025-04-11 09:05:41,238 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13936891 bytes
+2025-04-11 09:05:41,241 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13871355 bytes
+2025-04-11 09:05:41,243 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13805819 bytes
+2025-04-11 09:05:41,246 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13740283 bytes
+2025-04-11 09:05:41,249 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13674747 bytes
+2025-04-11 09:05:41,251 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13609211 bytes
+2025-04-11 09:05:41,253 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13543675 bytes
+2025-04-11 09:05:41,256 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13478139 bytes
+2025-04-11 09:05:41,258 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13412603 bytes
+2025-04-11 09:05:41,261 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13347067 bytes
+2025-04-11 09:05:41,264 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13281531 bytes
+2025-04-11 09:05:41,266 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13215995 bytes
+2025-04-11 09:05:41,269 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13150459 bytes
+2025-04-11 09:05:41,272 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13084923 bytes
+2025-04-11 09:05:41,275 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13019387 bytes
+2025-04-11 09:05:41,277 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12953851 bytes
+2025-04-11 09:05:41,280 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12888315 bytes
+2025-04-11 09:05:41,283 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12822779 bytes
+2025-04-11 09:05:41,285 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12757243 bytes
+2025-04-11 09:05:41,288 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12691707 bytes
+2025-04-11 09:05:41,291 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12626171 bytes
+2025-04-11 09:05:41,293 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12560635 bytes
+2025-04-11 09:05:41,296 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12495099 bytes
+2025-04-11 09:05:41,298 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12429563 bytes
+2025-04-11 09:05:41,301 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12364027 bytes
+2025-04-11 09:05:41,304 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12298491 bytes
+2025-04-11 09:05:41,307 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12232955 bytes
+2025-04-11 09:05:41,309 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12167419 bytes
+2025-04-11 09:05:41,313 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12101883 bytes
+2025-04-11 09:05:41,315 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12036347 bytes
+2025-04-11 09:05:41,318 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11970811 bytes
+2025-04-11 09:05:41,321 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11905275 bytes
+2025-04-11 09:05:41,324 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11839739 bytes
+2025-04-11 09:05:41,327 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11774203 bytes
+2025-04-11 09:05:41,330 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11708667 bytes
+2025-04-11 09:05:41,332 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11643131 bytes
+2025-04-11 09:05:41,336 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11577595 bytes
+2025-04-11 09:05:41,339 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11512059 bytes
+2025-04-11 09:05:41,344 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11446523 bytes
+2025-04-11 09:05:41,347 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11380987 bytes
+2025-04-11 09:05:41,350 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11315451 bytes
+2025-04-11 09:05:41,353 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11249915 bytes
+2025-04-11 09:05:41,356 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11184379 bytes
+2025-04-11 09:05:41,359 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11118843 bytes
+2025-04-11 09:05:41,362 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11053307 bytes
+2025-04-11 09:05:41,365 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10987771 bytes
+2025-04-11 09:05:41,367 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10922235 bytes
+2025-04-11 09:05:41,370 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10856699 bytes
+2025-04-11 09:05:41,374 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10791163 bytes
+2025-04-11 09:05:41,377 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10725627 bytes
+2025-04-11 09:05:41,380 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10660091 bytes
+2025-04-11 09:05:41,383 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10594555 bytes
+2025-04-11 09:05:41,386 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10529019 bytes
+2025-04-11 09:05:41,390 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10463483 bytes
+2025-04-11 09:05:41,393 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10397947 bytes
+2025-04-11 09:05:41,396 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10332411 bytes
+2025-04-11 09:05:41,399 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10266875 bytes
+2025-04-11 09:05:41,401 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10201339 bytes
+2025-04-11 09:05:41,405 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10135803 bytes
+2025-04-11 09:05:41,408 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10070267 bytes
+2025-04-11 09:05:41,411 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10004731 bytes
+2025-04-11 09:05:41,414 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9939195 bytes
+2025-04-11 09:05:41,417 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9873659 bytes
+2025-04-11 09:05:41,420 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9808123 bytes
+2025-04-11 09:05:41,424 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9742587 bytes
+2025-04-11 09:05:41,427 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9677051 bytes
+2025-04-11 09:05:41,430 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9611515 bytes
+2025-04-11 09:05:41,433 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9545979 bytes
+2025-04-11 09:05:41,436 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9480443 bytes
+2025-04-11 09:05:41,439 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9414907 bytes
+2025-04-11 09:05:41,442 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9349371 bytes
+2025-04-11 09:05:41,445 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9283835 bytes
+2025-04-11 09:05:41,449 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9218299 bytes
+2025-04-11 09:05:41,456 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9152763 bytes
+2025-04-11 09:05:41,459 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9087227 bytes
+2025-04-11 09:05:41,462 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9021691 bytes
+2025-04-11 09:05:41,465 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8956155 bytes
+2025-04-11 09:05:41,468 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8890619 bytes
+2025-04-11 09:05:41,471 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8825083 bytes
+2025-04-11 09:05:41,474 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8759547 bytes
+2025-04-11 09:05:41,477 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8694011 bytes
+2025-04-11 09:05:41,481 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8628475 bytes
+2025-04-11 09:05:41,484 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8562939 bytes
+2025-04-11 09:05:41,487 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8497403 bytes
+2025-04-11 09:05:41,490 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8431867 bytes
+2025-04-11 09:05:41,494 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8366331 bytes
+2025-04-11 09:05:41,497 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8300795 bytes
+2025-04-11 09:05:41,500 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8235259 bytes
+2025-04-11 09:05:41,504 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8169723 bytes
+2025-04-11 09:05:41,507 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8104187 bytes
+2025-04-11 09:05:41,510 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8038651 bytes
+2025-04-11 09:05:41,513 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7973115 bytes
+2025-04-11 09:05:41,517 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7907579 bytes
+2025-04-11 09:05:41,520 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7842043 bytes
+2025-04-11 09:05:41,524 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7776507 bytes
+2025-04-11 09:05:41,527 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7710971 bytes
+2025-04-11 09:05:41,531 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7645435 bytes
+2025-04-11 09:05:41,534 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7579899 bytes
+2025-04-11 09:05:41,537 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7514363 bytes
+2025-04-11 09:05:41,541 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7448827 bytes
+2025-04-11 09:05:41,544 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7383291 bytes
+2025-04-11 09:05:41,548 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7317755 bytes
+2025-04-11 09:05:41,551 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7252219 bytes
+2025-04-11 09:05:41,554 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7186683 bytes
+2025-04-11 09:05:41,558 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7121147 bytes
+2025-04-11 09:05:41,562 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7055611 bytes
+2025-04-11 09:05:41,565 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6990075 bytes
+2025-04-11 09:05:41,569 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6924539 bytes
+2025-04-11 09:05:41,572 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6859003 bytes
+2025-04-11 09:05:41,576 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6793467 bytes
+2025-04-11 09:05:41,579 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6727931 bytes
+2025-04-11 09:05:41,583 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6662395 bytes
+2025-04-11 09:05:41,586 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6596859 bytes
+2025-04-11 09:05:41,590 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6531323 bytes
+2025-04-11 09:05:41,594 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6465787 bytes
+2025-04-11 09:05:41,597 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6400251 bytes
+2025-04-11 09:05:41,601 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6334715 bytes
+2025-04-11 09:05:41,605 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6269179 bytes
+2025-04-11 09:05:41,608 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6203643 bytes
+2025-04-11 09:05:41,612 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6138107 bytes
+2025-04-11 09:05:41,615 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6072571 bytes
+2025-04-11 09:05:41,619 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6007035 bytes
+2025-04-11 09:05:41,622 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5941499 bytes
+2025-04-11 09:05:41,626 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5875963 bytes
+2025-04-11 09:05:41,629 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5810427 bytes
+2025-04-11 09:05:41,633 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5744891 bytes
+2025-04-11 09:05:41,636 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5679355 bytes
+2025-04-11 09:05:41,639 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5613819 bytes
+2025-04-11 09:05:41,643 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5548283 bytes
+2025-04-11 09:05:41,646 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5482747 bytes
+2025-04-11 09:05:41,649 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5417211 bytes
+2025-04-11 09:05:41,653 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5351675 bytes
+2025-04-11 09:05:41,658 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5286139 bytes
+2025-04-11 09:05:41,661 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5220603 bytes
+2025-04-11 09:05:41,664 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5155067 bytes
+2025-04-11 09:05:41,668 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5089531 bytes
+2025-04-11 09:05:41,672 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5023995 bytes
+2025-04-11 09:05:41,675 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4958459 bytes
+2025-04-11 09:05:41,679 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4892923 bytes
+2025-04-11 09:05:41,682 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4827387 bytes
+2025-04-11 09:05:41,686 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4761851 bytes
+2025-04-11 09:05:41,690 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4696315 bytes
+2025-04-11 09:05:41,694 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4630779 bytes
+2025-04-11 09:05:41,698 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4565243 bytes
+2025-04-11 09:05:41,701 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4499707 bytes
+2025-04-11 09:05:41,705 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4434171 bytes
+2025-04-11 09:05:41,708 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4368635 bytes
+2025-04-11 09:05:41,712 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4303099 bytes
+2025-04-11 09:05:41,720 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4237563 bytes
+2025-04-11 09:05:41,724 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4172027 bytes
+2025-04-11 09:05:41,728 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4106491 bytes
+2025-04-11 09:05:41,734 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4040955 bytes
+2025-04-11 09:05:41,738 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3975419 bytes
+2025-04-11 09:05:41,742 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3909883 bytes
+2025-04-11 09:05:41,746 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3844347 bytes
+2025-04-11 09:05:41,750 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3778811 bytes
+2025-04-11 09:05:41,754 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3713275 bytes
+2025-04-11 09:05:41,758 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3647739 bytes
+2025-04-11 09:05:41,762 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3582203 bytes
+2025-04-11 09:05:41,766 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3516667 bytes
+2025-04-11 09:05:41,770 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3451131 bytes
+2025-04-11 09:05:41,774 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3385595 bytes
+2025-04-11 09:05:41,778 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3320059 bytes
+2025-04-11 09:05:41,781 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3254523 bytes
+2025-04-11 09:05:41,786 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3188987 bytes
+2025-04-11 09:05:41,789 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3123451 bytes
+2025-04-11 09:05:41,793 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3057915 bytes
+2025-04-11 09:05:41,797 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2992379 bytes
+2025-04-11 09:05:41,802 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2926843 bytes
+2025-04-11 09:05:41,805 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2861307 bytes
+2025-04-11 09:05:41,809 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2795771 bytes
+2025-04-11 09:05:41,813 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2730235 bytes
+2025-04-11 09:05:41,817 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2664699 bytes
+2025-04-11 09:05:41,821 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2599163 bytes
+2025-04-11 09:05:41,825 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2533627 bytes
+2025-04-11 09:05:41,829 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2468091 bytes
+2025-04-11 09:05:41,833 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2402555 bytes
+2025-04-11 09:05:41,837 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2337019 bytes
+2025-04-11 09:05:41,841 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2271483 bytes
+2025-04-11 09:05:41,846 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2205947 bytes
+2025-04-11 09:05:41,850 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2140411 bytes
+2025-04-11 09:05:41,854 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2074875 bytes
+2025-04-11 09:05:41,858 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2009339 bytes
+2025-04-11 09:05:41,862 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1943803 bytes
+2025-04-11 09:05:41,866 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1878267 bytes
+2025-04-11 09:05:41,870 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1812731 bytes
+2025-04-11 09:05:41,874 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1747195 bytes
+2025-04-11 09:05:41,878 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1681659 bytes
+2025-04-11 09:05:41,882 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1616123 bytes
+2025-04-11 09:05:41,887 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1550587 bytes
+2025-04-11 09:05:41,894 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1485051 bytes
+2025-04-11 09:05:41,898 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1419515 bytes
+2025-04-11 09:05:41,902 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1353979 bytes
+2025-04-11 09:05:41,906 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1288443 bytes
+2025-04-11 09:05:41,910 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1222907 bytes
+2025-04-11 09:05:41,915 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1157371 bytes
+2025-04-11 09:05:41,919 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1091835 bytes
+2025-04-11 09:05:41,924 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1026299 bytes
+2025-04-11 09:05:41,928 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 960763 bytes
+2025-04-11 09:05:41,932 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 895227 bytes
+2025-04-11 09:05:41,936 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 829691 bytes
+2025-04-11 09:05:41,940 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 764155 bytes
+2025-04-11 09:05:41,944 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 698619 bytes
+2025-04-11 09:05:41,949 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 633083 bytes
+2025-04-11 09:05:41,955 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 567547 bytes
+2025-04-11 09:05:41,959 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 502011 bytes
+2025-04-11 09:05:41,963 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 436475 bytes
+2025-04-11 09:05:41,968 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 370939 bytes
+2025-04-11 09:05:41,972 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 305403 bytes
+2025-04-11 09:05:41,976 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 239867 bytes
+2025-04-11 09:05:41,981 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 174331 bytes
+2025-04-11 09:05:41,985 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 108795 bytes
+2025-04-11 09:05:41,989 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 43259 bytes
+2025-04-11 09:05:41,994 - Client - INFO - Menerima chunk: 43259 bytes, sisa: 0 bytes
+2025-04-11 09:05:41,995 - Client - INFO - Selesai menerima 29599995 bytes data
+2025-04-11 09:05:42,216 - Client - INFO - Model global diterima dan dimuat
+2025-04-11 09:05:42,821 - Client - INFO - Akurasi Model: 0.0000
+2025-04-11 09:05:42,821 - Client - INFO - Classification Report: {'0': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 994.0}, '1': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 0.0}, '2': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 0.0}, '4': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 0.0}, 'accuracy': 0.0, 'macro avg': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 994.0}, 'weighted avg': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 994.0}}
+2025-04-11 09:05:42,821 - Client - INFO - Confusion Matrix:
+[[  0  57 211 726]
+ [  0   0   0   0]
+ [  0   0   0   0]
+ [  0   0   0   0]]
+2025-04-11 09:05:42,822 - Client - INFO - Akurasi model sebelum pelatihan lokal: 0.0000
+2025-04-11 09:05:42,822 - Client - INFO - Mulai pelatihan model lokal...
+2025-04-11 09:05:43,530 - Client - INFO - Klien 2 dimulai...
+2025-04-11 09:05:43,530 - Client - INFO - File .mat tidak ditemukan, membuat dari WFDB...
+2025-04-11 09:05:43,580 - Client - INFO - File .mat berhasil dibuat dari data WFDB.
+2025-04-11 09:05:43,580 - Client - INFO - Memuat data dari mit-bih/100_2.mat
+2025-04-11 09:05:43,604 - Client - INFO - Mulai ekstraksi fitur dengan 4965 puncak R terdeteksi
+2025-04-11 09:05:43,684 - Client - INFO - Ekstraksi selesai: 4963 sampel dengan bentuk (4963, 2, 128)
+2025-04-11 09:05:43,693 - Client - INFO - Data dimuat: torch.Size([4963, 2, 128]) features, torch.Size([4963]) labels
+2025-04-11 09:05:43,699 - Client - INFO - Data dibagi: 3970 training samples, 993 validation samples
+2025-04-11 09:05:43,786 - Client - INFO - Model lokal diinisialisasi
+2025-04-11 09:05:43,787 - Client - INFO - Terhubung ke server di 127.0.0.1:65432
+2025-04-11 09:05:43,971 - Client - INFO - Bersiap menerima model global ukuran 29599995 bytes
+2025-04-11 09:05:43,971 - Client - INFO - Menerima 29599995 bytes data
+2025-04-11 09:05:44,011 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29534459 bytes
+2025-04-11 09:05:44,011 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29468923 bytes
+2025-04-11 09:05:44,011 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29403387 bytes
+2025-04-11 09:05:44,011 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29337851 bytes
+2025-04-11 09:05:44,012 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29272315 bytes
+2025-04-11 09:05:44,012 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29206779 bytes
+2025-04-11 09:05:44,012 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29141243 bytes
+2025-04-11 09:05:44,012 - Client - INFO - Menerima chunk: 65208 bytes, sisa: 29076035 bytes
+2025-04-11 09:05:44,030 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29010499 bytes
+2025-04-11 09:05:44,031 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28944963 bytes
+2025-04-11 09:05:44,031 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28879427 bytes
+2025-04-11 09:05:44,031 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28813891 bytes
+2025-04-11 09:05:44,032 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28748355 bytes
+2025-04-11 09:05:44,032 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28682819 bytes
+2025-04-11 09:05:44,032 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28617283 bytes
+2025-04-11 09:05:44,033 - Client - INFO - Menerima chunk: 65208 bytes, sisa: 28552075 bytes
+2025-04-11 09:05:44,047 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28486539 bytes
+2025-04-11 09:05:44,048 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28421003 bytes
+2025-04-11 09:05:44,048 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28355467 bytes
+2025-04-11 09:05:44,049 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28289931 bytes
+2025-04-11 09:05:44,049 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28224395 bytes
+2025-04-11 09:05:44,050 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28158859 bytes
+2025-04-11 09:05:44,051 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28093323 bytes
+2025-04-11 09:05:44,052 - Client - INFO - Menerima chunk: 65208 bytes, sisa: 28028115 bytes
+2025-04-11 09:05:44,061 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27962579 bytes
+2025-04-11 09:05:44,062 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27897043 bytes
+2025-04-11 09:05:44,063 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27831507 bytes
+2025-04-11 09:05:44,063 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27765971 bytes
+2025-04-11 09:05:44,063 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27700435 bytes
+2025-04-11 09:05:44,064 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27634899 bytes
+2025-04-11 09:05:44,065 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27569363 bytes
+2025-04-11 09:05:44,065 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27503827 bytes
+2025-04-11 09:05:44,066 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27438291 bytes
+2025-04-11 09:05:44,066 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27372755 bytes
+2025-04-11 09:05:44,067 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27307219 bytes
+2025-04-11 09:05:44,067 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27241683 bytes
+2025-04-11 09:05:44,068 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27176147 bytes
+2025-04-11 09:05:44,069 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27110611 bytes
+2025-04-11 09:05:44,070 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27045075 bytes
+2025-04-11 09:05:44,070 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26979539 bytes
+2025-04-11 09:05:44,071 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26914003 bytes
+2025-04-11 09:05:44,072 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26848467 bytes
+2025-04-11 09:05:44,072 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26782931 bytes
+2025-04-11 09:05:44,073 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26717395 bytes
+2025-04-11 09:05:44,074 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26651859 bytes
+2025-04-11 09:05:44,074 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26586323 bytes
+2025-04-11 09:05:44,075 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26520787 bytes
+2025-04-11 09:05:44,076 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26455251 bytes
+2025-04-11 09:05:44,077 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26389715 bytes
+2025-04-11 09:05:44,077 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26324179 bytes
+2025-04-11 09:05:44,078 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26258643 bytes
+2025-04-11 09:05:44,079 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26193107 bytes
+2025-04-11 09:05:44,080 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26127571 bytes
+2025-04-11 09:05:44,081 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26062035 bytes
+2025-04-11 09:05:44,082 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25996499 bytes
+2025-04-11 09:05:44,083 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25930963 bytes
+2025-04-11 09:05:44,084 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25865427 bytes
+2025-04-11 09:05:44,085 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25799891 bytes
+2025-04-11 09:05:44,086 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25734355 bytes
+2025-04-11 09:05:44,087 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25668819 bytes
+2025-04-11 09:05:44,088 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25603283 bytes
+2025-04-11 09:05:44,089 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25537747 bytes
+2025-04-11 09:05:44,090 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25472211 bytes
+2025-04-11 09:05:44,091 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25406675 bytes
+2025-04-11 09:05:44,092 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25341139 bytes
+2025-04-11 09:05:44,093 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25275603 bytes
+2025-04-11 09:05:44,094 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25210067 bytes
+2025-04-11 09:05:44,094 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25144531 bytes
+2025-04-11 09:05:44,095 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25078995 bytes
+2025-04-11 09:05:44,096 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25013459 bytes
+2025-04-11 09:05:44,097 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24947923 bytes
+2025-04-11 09:05:44,098 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24882387 bytes
+2025-04-11 09:05:44,099 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24816851 bytes
+2025-04-11 09:05:44,100 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24751315 bytes
+2025-04-11 09:05:44,101 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24685779 bytes
+2025-04-11 09:05:44,102 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24620243 bytes
+2025-04-11 09:05:44,102 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24554707 bytes
+2025-04-11 09:05:44,103 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24489171 bytes
+2025-04-11 09:05:44,104 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24423635 bytes
+2025-04-11 09:05:44,105 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24358099 bytes
+2025-04-11 09:05:44,106 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24292563 bytes
+2025-04-11 09:05:44,107 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24227027 bytes
+2025-04-11 09:05:44,109 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24161491 bytes
+2025-04-11 09:05:44,110 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24095955 bytes
+2025-04-11 09:05:44,111 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24030419 bytes
+2025-04-11 09:05:44,113 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23964883 bytes
+2025-04-11 09:05:44,114 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23899347 bytes
+2025-04-11 09:05:44,115 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23833811 bytes
+2025-04-11 09:05:44,117 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23768275 bytes
+2025-04-11 09:05:44,118 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23702739 bytes
+2025-04-11 09:05:44,119 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23637203 bytes
+2025-04-11 09:05:44,120 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23571667 bytes
+2025-04-11 09:05:44,121 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23506131 bytes
+2025-04-11 09:05:44,123 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23440595 bytes
+2025-04-11 09:05:44,124 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23375059 bytes
+2025-04-11 09:05:44,126 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23309523 bytes
+2025-04-11 09:05:44,127 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23243987 bytes
+2025-04-11 09:05:44,128 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23178451 bytes
+2025-04-11 09:05:44,130 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23112915 bytes
+2025-04-11 09:05:44,131 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23047379 bytes
+2025-04-11 09:05:44,132 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22981843 bytes
+2025-04-11 09:05:44,133 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22916307 bytes
+2025-04-11 09:05:44,134 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22850771 bytes
+2025-04-11 09:05:44,136 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22785235 bytes
+2025-04-11 09:05:44,137 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22719699 bytes
+2025-04-11 09:05:44,139 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22654163 bytes
+2025-04-11 09:05:44,140 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22588627 bytes
+2025-04-11 09:05:44,141 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22523091 bytes
+2025-04-11 09:05:44,143 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22457555 bytes
+2025-04-11 09:05:44,144 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22392019 bytes
+2025-04-11 09:05:44,145 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22326483 bytes
+2025-04-11 09:05:44,146 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22260947 bytes
+2025-04-11 09:05:44,148 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22195411 bytes
+2025-04-11 09:05:44,149 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22129875 bytes
+2025-04-11 09:05:44,150 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22064339 bytes
+2025-04-11 09:05:44,151 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21998803 bytes
+2025-04-11 09:05:44,153 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21933267 bytes
+2025-04-11 09:05:44,154 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21867731 bytes
+2025-04-11 09:05:44,156 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21802195 bytes
+2025-04-11 09:05:44,157 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21736659 bytes
+2025-04-11 09:05:44,159 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21671123 bytes
+2025-04-11 09:05:44,160 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21605587 bytes
+2025-04-11 09:05:44,161 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21540051 bytes
+2025-04-11 09:05:44,163 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21474515 bytes
+2025-04-11 09:05:44,164 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21408979 bytes
+2025-04-11 09:05:44,165 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21343443 bytes
+2025-04-11 09:05:44,167 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21277907 bytes
+2025-04-11 09:05:44,169 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21212371 bytes
+2025-04-11 09:05:44,170 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21146835 bytes
+2025-04-11 09:05:44,172 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21081299 bytes
+2025-04-11 09:05:44,173 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21015763 bytes
+2025-04-11 09:05:44,175 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20950227 bytes
+2025-04-11 09:05:44,176 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20884691 bytes
+2025-04-11 09:05:44,178 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20819155 bytes
+2025-04-11 09:05:44,179 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20753619 bytes
+2025-04-11 09:05:44,181 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20688083 bytes
+2025-04-11 09:05:44,182 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20622547 bytes
+2025-04-11 09:05:44,184 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20557011 bytes
+2025-04-11 09:05:44,186 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20491475 bytes
+2025-04-11 09:05:44,188 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20425939 bytes
+2025-04-11 09:05:44,189 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20360403 bytes
+2025-04-11 09:05:44,190 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20294867 bytes
+2025-04-11 09:05:44,192 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20229331 bytes
+2025-04-11 09:05:44,193 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20163795 bytes
+2025-04-11 09:05:44,195 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20098259 bytes
+2025-04-11 09:05:44,196 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20032723 bytes
+2025-04-11 09:05:44,198 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19967187 bytes
+2025-04-11 09:05:44,199 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19901651 bytes
+2025-04-11 09:05:44,201 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19836115 bytes
+2025-04-11 09:05:44,203 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19770579 bytes
+2025-04-11 09:05:44,205 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19705043 bytes
+2025-04-11 09:05:44,207 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19639507 bytes
+2025-04-11 09:05:44,208 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19573971 bytes
+2025-04-11 09:05:44,210 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19508435 bytes
+2025-04-11 09:05:44,211 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19442899 bytes
+2025-04-11 09:05:44,213 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19377363 bytes
+2025-04-11 09:05:44,215 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19311827 bytes
+2025-04-11 09:05:44,217 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19246291 bytes
+2025-04-11 09:05:44,218 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19180755 bytes
+2025-04-11 09:05:44,220 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19115219 bytes
+2025-04-11 09:05:44,222 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19049683 bytes
+2025-04-11 09:05:44,224 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18984147 bytes
+2025-04-11 09:05:44,226 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18918611 bytes
+2025-04-11 09:05:44,229 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18853075 bytes
+2025-04-11 09:05:44,231 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18787539 bytes
+2025-04-11 09:05:44,233 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18722003 bytes
+2025-04-11 09:05:44,235 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18656467 bytes
+2025-04-11 09:05:44,237 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18590931 bytes
+2025-04-11 09:05:44,239 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18525395 bytes
+2025-04-11 09:05:44,241 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18459859 bytes
+2025-04-11 09:05:44,243 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18394323 bytes
+2025-04-11 09:05:44,245 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18328787 bytes
+2025-04-11 09:05:44,247 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18263251 bytes
+2025-04-11 09:05:44,249 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18197715 bytes
+2025-04-11 09:05:44,251 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18132179 bytes
+2025-04-11 09:05:44,253 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18066643 bytes
+2025-04-11 09:05:44,254 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18001107 bytes
+2025-04-11 09:05:44,256 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17935571 bytes
+2025-04-11 09:05:44,258 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17870035 bytes
+2025-04-11 09:05:44,260 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17804499 bytes
+2025-04-11 09:05:44,262 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17738963 bytes
+2025-04-11 09:05:44,264 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17673427 bytes
+2025-04-11 09:05:44,266 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17607891 bytes
+2025-04-11 09:05:44,268 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17542355 bytes
+2025-04-11 09:05:44,270 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17476819 bytes
+2025-04-11 09:05:44,272 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17411283 bytes
+2025-04-11 09:05:44,274 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17345747 bytes
+2025-04-11 09:05:44,275 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17280211 bytes
+2025-04-11 09:05:44,278 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17214675 bytes
+2025-04-11 09:05:44,280 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17149139 bytes
+2025-04-11 09:05:44,282 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17083603 bytes
+2025-04-11 09:05:44,284 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17018067 bytes
+2025-04-11 09:05:44,286 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16952531 bytes
+2025-04-11 09:05:44,288 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16886995 bytes
+2025-04-11 09:05:44,290 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16821459 bytes
+2025-04-11 09:05:44,292 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16755923 bytes
+2025-04-11 09:05:44,295 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16690387 bytes
+2025-04-11 09:05:44,297 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16624851 bytes
+2025-04-11 09:05:44,299 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16559315 bytes
+2025-04-11 09:05:44,301 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16493779 bytes
+2025-04-11 09:05:44,304 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16428243 bytes
+2025-04-11 09:05:44,306 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16362707 bytes
+2025-04-11 09:05:44,308 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16297171 bytes
+2025-04-11 09:05:44,310 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16231635 bytes
+2025-04-11 09:05:44,312 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16166099 bytes
+2025-04-11 09:05:44,314 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16100563 bytes
+2025-04-11 09:05:44,316 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16035027 bytes
+2025-04-11 09:05:44,318 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15969491 bytes
+2025-04-11 09:05:44,320 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15903955 bytes
+2025-04-11 09:05:44,322 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15838419 bytes
+2025-04-11 09:05:44,325 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15772883 bytes
+2025-04-11 09:05:44,327 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15707347 bytes
+2025-04-11 09:05:44,329 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15641811 bytes
+2025-04-11 09:05:44,331 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15576275 bytes
+2025-04-11 09:05:44,333 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15510739 bytes
+2025-04-11 09:05:44,335 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15445203 bytes
+2025-04-11 09:05:44,337 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15379667 bytes
+2025-04-11 09:05:44,339 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15314131 bytes
+2025-04-11 09:05:44,341 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15248595 bytes
+2025-04-11 09:05:44,344 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15183059 bytes
+2025-04-11 09:05:44,346 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15117523 bytes
+2025-04-11 09:05:44,348 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15051987 bytes
+2025-04-11 09:05:44,351 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14986451 bytes
+2025-04-11 09:05:44,353 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14920915 bytes
+2025-04-11 09:05:44,354 - Client - INFO - Mulai training selama 10 epochs
+2025-04-11 09:05:44,356 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14855379 bytes
+2025-04-11 09:05:44,359 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14789843 bytes
+2025-04-11 09:05:44,366 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14724307 bytes
+2025-04-11 09:05:44,373 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14658771 bytes
+2025-04-11 09:05:44,376 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14593235 bytes
+2025-04-11 09:05:44,379 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14527699 bytes
+2025-04-11 09:05:44,383 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14462163 bytes
+2025-04-11 09:05:44,386 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14396627 bytes
+2025-04-11 09:05:44,390 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14331091 bytes
+2025-04-11 09:05:44,393 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14265555 bytes
+2025-04-11 09:05:44,396 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14200019 bytes
+2025-04-11 09:05:44,398 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14134483 bytes
+2025-04-11 09:05:44,401 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14068947 bytes
+2025-04-11 09:05:44,404 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14003411 bytes
+2025-04-11 09:05:44,407 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13937875 bytes
+2025-04-11 09:05:44,409 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13872339 bytes
+2025-04-11 09:05:44,412 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13806803 bytes
+2025-04-11 09:05:44,415 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13741267 bytes
+2025-04-11 09:05:44,419 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13675731 bytes
+2025-04-11 09:05:44,422 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13610195 bytes
+2025-04-11 09:05:44,426 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13544659 bytes
+2025-04-11 09:05:44,428 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13479123 bytes
+2025-04-11 09:05:44,433 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13413587 bytes
+2025-04-11 09:05:44,437 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13348051 bytes
+2025-04-11 09:05:44,442 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13282515 bytes
+2025-04-11 09:05:44,446 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13216979 bytes
+2025-04-11 09:05:44,451 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13151443 bytes
+2025-04-11 09:05:44,455 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13085907 bytes
+2025-04-11 09:05:44,461 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13020371 bytes
+2025-04-11 09:05:44,465 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12954835 bytes
+2025-04-11 09:05:44,468 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12889299 bytes
+2025-04-11 09:05:44,472 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12823763 bytes
+2025-04-11 09:05:44,476 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12758227 bytes
+2025-04-11 09:05:44,478 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12692691 bytes
+2025-04-11 09:05:44,483 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12627155 bytes
+2025-04-11 09:05:44,488 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12561619 bytes
+2025-04-11 09:05:44,495 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12496083 bytes
+2025-04-11 09:05:44,498 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12430547 bytes
+2025-04-11 09:05:44,501 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12365011 bytes
+2025-04-11 09:05:44,505 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12299475 bytes
+2025-04-11 09:05:44,508 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12233939 bytes
+2025-04-11 09:05:44,512 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12168403 bytes
+2025-04-11 09:05:44,516 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12102867 bytes
+2025-04-11 09:05:44,522 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12037331 bytes
+2025-04-11 09:05:44,528 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11971795 bytes
+2025-04-11 09:05:44,535 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11906259 bytes
+2025-04-11 09:05:44,543 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11840723 bytes
+2025-04-11 09:05:44,549 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11775187 bytes
+2025-04-11 09:05:44,556 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11709651 bytes
+2025-04-11 09:05:44,563 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11644115 bytes
+2025-04-11 09:05:44,567 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11578579 bytes
+2025-04-11 09:05:44,574 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11513043 bytes
+2025-04-11 09:05:44,580 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11447507 bytes
+2025-04-11 09:05:44,587 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11381971 bytes
+2025-04-11 09:05:44,595 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11316435 bytes
+2025-04-11 09:05:44,603 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11250899 bytes
+2025-04-11 09:05:44,608 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11185363 bytes
+2025-04-11 09:05:44,612 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11119827 bytes
+2025-04-11 09:05:44,617 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11054291 bytes
+2025-04-11 09:05:44,620 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10988755 bytes
+2025-04-11 09:05:44,626 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10923219 bytes
+2025-04-11 09:05:44,630 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10857683 bytes
+2025-04-11 09:05:44,637 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10792147 bytes
+2025-04-11 09:05:44,642 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10726611 bytes
+2025-04-11 09:05:44,647 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10661075 bytes
+2025-04-11 09:05:44,652 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10595539 bytes
+2025-04-11 09:05:44,660 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10530003 bytes
+2025-04-11 09:05:44,667 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10464467 bytes
+2025-04-11 09:05:44,676 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10398931 bytes
+2025-04-11 09:05:44,681 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10333395 bytes
+2025-04-11 09:05:44,686 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10267859 bytes
+2025-04-11 09:05:44,691 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10202323 bytes
+2025-04-11 09:05:44,697 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10136787 bytes
+2025-04-11 09:05:44,702 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10071251 bytes
+2025-04-11 09:05:44,708 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10005715 bytes
+2025-04-11 09:05:44,713 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9940179 bytes
+2025-04-11 09:05:44,720 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9874643 bytes
+2025-04-11 09:05:44,728 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9809107 bytes
+2025-04-11 09:05:44,738 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9743571 bytes
+2025-04-11 09:05:44,747 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9678035 bytes
+2025-04-11 09:05:44,753 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9612499 bytes
+2025-04-11 09:05:44,759 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9546963 bytes
+2025-04-11 09:05:44,764 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9481427 bytes
+2025-04-11 09:05:44,770 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9415891 bytes
+2025-04-11 09:05:44,775 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9350355 bytes
+2025-04-11 09:05:44,784 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9284819 bytes
+2025-04-11 09:05:44,793 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9219283 bytes
+2025-04-11 09:05:44,802 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9153747 bytes
+2025-04-11 09:05:44,808 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9088211 bytes
+2025-04-11 09:05:44,815 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9022675 bytes
+2025-04-11 09:05:44,824 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8957139 bytes
+2025-04-11 09:05:44,831 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8891603 bytes
+2025-04-11 09:05:44,840 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8826067 bytes
+2025-04-11 09:05:44,848 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8760531 bytes
+2025-04-11 09:05:44,861 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8694995 bytes
+2025-04-11 09:05:44,873 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8629459 bytes
+2025-04-11 09:05:44,881 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8563923 bytes
+2025-04-11 09:05:44,889 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8498387 bytes
+2025-04-11 09:05:44,897 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8432851 bytes
+2025-04-11 09:05:44,906 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8367315 bytes
+2025-04-11 09:05:44,917 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8301779 bytes
+2025-04-11 09:05:44,932 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8236243 bytes
+2025-04-11 09:05:44,940 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8170707 bytes
+2025-04-11 09:05:44,950 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8105171 bytes
+2025-04-11 09:05:44,961 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8039635 bytes
+2025-04-11 09:05:44,970 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7974099 bytes
+2025-04-11 09:05:44,983 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7908563 bytes
+2025-04-11 09:05:44,988 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7843027 bytes
+2025-04-11 09:05:44,995 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7777491 bytes
+2025-04-11 09:05:45,003 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7711955 bytes
+2025-04-11 09:05:45,016 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7646419 bytes
+2025-04-11 09:05:45,022 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7580883 bytes
+2025-04-11 09:05:45,028 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7515347 bytes
+2025-04-11 09:05:45,034 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7449811 bytes
+2025-04-11 09:05:45,042 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7384275 bytes
+2025-04-11 09:05:45,050 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7318739 bytes
+2025-04-11 09:05:45,057 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7253203 bytes
+2025-04-11 09:05:45,068 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7187667 bytes
+2025-04-11 09:05:45,076 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7122131 bytes
+2025-04-11 09:05:45,086 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7056595 bytes
+2025-04-11 09:05:45,098 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6991059 bytes
+2025-04-11 09:05:45,109 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6925523 bytes
+2025-04-11 09:05:45,116 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6859987 bytes
+2025-04-11 09:05:45,123 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6794451 bytes
+2025-04-11 09:05:45,130 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6728915 bytes
+2025-04-11 09:05:45,136 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6663379 bytes
+2025-04-11 09:05:45,148 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6597843 bytes
+2025-04-11 09:05:45,159 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6532307 bytes
+2025-04-11 09:05:45,170 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6466771 bytes
+2025-04-11 09:05:45,177 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6401235 bytes
+2025-04-11 09:05:45,185 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6335699 bytes
+2025-04-11 09:05:45,193 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6270163 bytes
+2025-04-11 09:05:45,200 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6204627 bytes
+2025-04-11 09:05:45,207 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6139091 bytes
+2025-04-11 09:05:45,215 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6073555 bytes
+2025-04-11 09:05:45,222 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6008019 bytes
+2025-04-11 09:05:45,228 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5942483 bytes
+2025-04-11 09:05:45,237 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5876947 bytes
+2025-04-11 09:05:45,245 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5811411 bytes
+2025-04-11 09:05:45,252 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5745875 bytes
+2025-04-11 09:05:45,259 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5680339 bytes
+2025-04-11 09:05:45,266 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5614803 bytes
+2025-04-11 09:05:45,274 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5549267 bytes
+2025-04-11 09:05:45,285 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5483731 bytes
+2025-04-11 09:05:45,294 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5418195 bytes
+2025-04-11 09:05:45,299 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5352659 bytes
+2025-04-11 09:05:45,307 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5287123 bytes
+2025-04-11 09:05:45,316 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5221587 bytes
+2025-04-11 09:05:45,322 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5156051 bytes
+2025-04-11 09:05:45,330 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5090515 bytes
+2025-04-11 09:05:45,339 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5024979 bytes
+2025-04-11 09:05:45,349 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4959443 bytes
+2025-04-11 09:05:45,355 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4893907 bytes
+2025-04-11 09:05:45,363 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4828371 bytes
+2025-04-11 09:05:45,370 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4762835 bytes
+2025-04-11 09:05:45,377 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4697299 bytes
+2025-04-11 09:05:45,383 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4631763 bytes
+2025-04-11 09:05:45,392 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4566227 bytes
+2025-04-11 09:05:45,401 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4500691 bytes
+2025-04-11 09:05:45,411 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4435155 bytes
+2025-04-11 09:05:45,422 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4369619 bytes
+2025-04-11 09:05:45,428 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4304083 bytes
+2025-04-11 09:05:45,440 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4238547 bytes
+2025-04-11 09:05:45,452 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4173011 bytes
+2025-04-11 09:05:45,458 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4107475 bytes
+2025-04-11 09:05:45,464 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4041939 bytes
+2025-04-11 09:05:45,473 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3976403 bytes
+2025-04-11 09:05:45,483 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3910867 bytes
+2025-04-11 09:05:45,493 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3845331 bytes
+2025-04-11 09:05:45,500 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3779795 bytes
+2025-04-11 09:05:45,510 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3714259 bytes
+2025-04-11 09:05:45,522 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3648723 bytes
+2025-04-11 09:05:45,531 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3583187 bytes
+2025-04-11 09:05:45,543 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3517651 bytes
+2025-04-11 09:05:45,558 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3452115 bytes
+2025-04-11 09:05:45,564 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3386579 bytes
+2025-04-11 09:05:45,572 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3321043 bytes
+2025-04-11 09:05:45,585 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3255507 bytes
+2025-04-11 09:05:45,594 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3189971 bytes
+2025-04-11 09:05:45,602 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3124435 bytes
+2025-04-11 09:05:45,617 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3058899 bytes
+2025-04-11 09:05:45,631 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2993363 bytes
+2025-04-11 09:05:45,645 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2927827 bytes
+2025-04-11 09:05:45,653 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2862291 bytes
+2025-04-11 09:05:45,659 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2796755 bytes
+2025-04-11 09:05:45,666 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2731219 bytes
+2025-04-11 09:05:45,680 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2665683 bytes
+2025-04-11 09:05:45,694 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2600147 bytes
+2025-04-11 09:05:45,700 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2534611 bytes
+2025-04-11 09:05:45,706 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2469075 bytes
+2025-04-11 09:05:45,712 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2403539 bytes
+2025-04-11 09:05:45,721 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2338003 bytes
+2025-04-11 09:05:45,730 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2272467 bytes
+2025-04-11 09:05:45,736 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2206931 bytes
+2025-04-11 09:05:45,742 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2141395 bytes
+2025-04-11 09:05:45,749 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2075859 bytes
+2025-04-11 09:05:45,756 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2010323 bytes
+2025-04-11 09:05:45,768 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1944787 bytes
+2025-04-11 09:05:45,776 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1879251 bytes
+2025-04-11 09:05:45,784 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1813715 bytes
+2025-04-11 09:05:45,792 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1748179 bytes
+2025-04-11 09:05:45,802 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1682643 bytes
+2025-04-11 09:05:45,817 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1617107 bytes
+2025-04-11 09:05:45,818 - Client - INFO - Epoch [1/10], Step [10], Loss: 0.0037
+2025-04-11 09:05:45,824 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1551571 bytes
+2025-04-11 09:05:45,835 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1486035 bytes
+2025-04-11 09:05:45,845 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1420499 bytes
+2025-04-11 09:05:45,852 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1354963 bytes
+2025-04-11 09:05:45,862 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1289427 bytes
+2025-04-11 09:05:45,874 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1223891 bytes
+2025-04-11 09:05:45,883 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1158355 bytes
+2025-04-11 09:05:45,891 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1092819 bytes
+2025-04-11 09:05:45,902 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1027283 bytes
+2025-04-11 09:05:45,911 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 961747 bytes
+2025-04-11 09:05:45,924 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 896211 bytes
+2025-04-11 09:05:45,931 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 830675 bytes
+2025-04-11 09:05:45,940 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 765139 bytes
+2025-04-11 09:05:45,959 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 699603 bytes
+2025-04-11 09:05:45,964 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 634067 bytes
+2025-04-11 09:05:45,972 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 568531 bytes
+2025-04-11 09:05:45,977 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 502995 bytes
+2025-04-11 09:05:45,984 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 437459 bytes
+2025-04-11 09:05:45,990 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 371923 bytes
+2025-04-11 09:05:45,996 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 306387 bytes
+2025-04-11 09:05:46,003 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 240851 bytes
+2025-04-11 09:05:46,011 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 175315 bytes
+2025-04-11 09:05:46,018 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 109779 bytes
+2025-04-11 09:05:46,025 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 44243 bytes
+2025-04-11 09:05:46,034 - Client - INFO - Menerima chunk: 44243 bytes, sisa: 0 bytes
+2025-04-11 09:05:46,034 - Client - INFO - Selesai menerima 29599995 bytes data
+2025-04-11 09:05:46,371 - Client - INFO - Model global diterima dan dimuat
+2025-04-11 09:05:47,306 - Client - INFO - Akurasi Model: 0.0010
+2025-04-11 09:05:47,306 - Client - INFO - Classification Report: {'0': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 992.0}, '1': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 0.0}, '2': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 0.0}, '4': {'precision': 0.0013966480446927375, 'recall': 1.0, 'f1-score': 0.002789400278940028, 'support': 1.0}, 'accuracy': 0.0010070493454179255, 'macro avg': {'precision': 0.00034916201117318437, 'recall': 0.25, 'f1-score': 0.000697350069735007, 'support': 993.0}, 'weighted avg': {'precision': 1.4064934991870467e-06, 'recall': 0.0010070493454179255, 'f1-score': 2.809063725015134e-06, 'support': 993.0}}
+2025-04-11 09:05:47,307 - Client - INFO - Confusion Matrix:
+[[  0  53 224 715]
+ [  0   0   0   0]
+ [  0   0   0   0]
+ [  0   0   0   1]]
+2025-04-11 09:05:47,307 - Client - INFO - Akurasi model sebelum pelatihan lokal: 0.0010
+2025-04-11 09:05:47,307 - Client - INFO - Mulai pelatihan model lokal...
+2025-04-11 09:05:47,363 - Client - INFO - Epoch [1/10], Step [20], Loss: 0.0007
+2025-04-11 09:05:49,368 - Client - INFO - Epoch [1/10], Step [30], Loss: 0.0002
+2025-04-11 09:05:49,971 - Client - INFO - Mulai training selama 10 epochs
+2025-04-11 09:05:50,482 - Client - INFO - Epoch [1/10], Step [40], Loss: 0.0001
+2025-04-11 09:05:51,538 - Client - INFO - Epoch [1/10], Step [10], Loss: 0.0037
+2025-04-11 09:05:51,955 - Client - INFO - Epoch [1/10], Step [50], Loss: 0.0002
+2025-04-11 09:05:53,057 - Client - INFO - Epoch [1/10], Step [20], Loss: 0.0010
+2025-04-11 09:05:53,529 - Client - INFO - Epoch [1/10], Step [60], Loss: 0.0014
+2025-04-11 09:05:54,617 - Client - INFO - Epoch [1/10], Step [30], Loss: 0.0230
+2025-04-11 09:05:55,062 - Client - INFO - Epoch [1/10], Step [70], Loss: 0.0020
+2025-04-11 09:05:56,134 - Client - INFO - Epoch [1/10], Step [40], Loss: 0.0010
+2025-04-11 09:05:56,589 - Client - INFO - Epoch [1/10], Step [80], Loss: 0.0029
+2025-04-11 09:05:57,593 - Client - INFO - Epoch [1/10], Step [50], Loss: 0.0008
+2025-04-11 09:05:58,051 - Client - INFO - Epoch [1/10], Step [90], Loss: 0.0010
+2025-04-11 09:05:59,185 - Client - INFO - Epoch [1/10], Step [60], Loss: 0.0026
+2025-04-11 09:05:59,647 - Client - INFO - Epoch [1/10], Step [100], Loss: 0.0351
+2025-04-11 09:06:00,747 - Client - INFO - Epoch [1/10], Step [70], Loss: 0.0023
+2025-04-11 09:06:01,220 - Client - INFO - Epoch [1/10], Step [110], Loss: 0.0014
+2025-04-11 09:06:02,276 - Client - INFO - Epoch [1/10], Step [80], Loss: 0.2427
+2025-04-11 09:06:02,732 - Client - INFO - Epoch [1/10], Step [120], Loss: 0.0009
+2025-04-11 09:06:03,472 - Client - INFO - Epoch [1/10] - Loss: 0.0493, Acc: 0.9857
+2025-04-11 09:06:03,758 - Client - INFO - Epoch [1/10], Step [90], Loss: 0.0012
+2025-04-11 09:06:04,219 - Client - INFO - Akurasi Model: 1.0000
+2025-04-11 09:06:04,219 - Client - INFO - Classification Report: {'0': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'accuracy': 1.0, 'macro avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'weighted avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}}
+2025-04-11 09:06:04,220 - Client - INFO - Confusion Matrix:
+[[994]]
+2025-04-11 09:06:04,220 - Client - INFO - New best validation accuracy: 1.0000
+2025-04-11 09:06:05,152 - Client - INFO - Epoch [1/10], Step [100], Loss: 0.0019
+2025-04-11 09:06:05,899 - Client - INFO - Epoch [2/10], Step [10], Loss: 0.0010
+2025-04-11 09:06:06,674 - Client - INFO - Epoch [1/10], Step [110], Loss: 0.0019
+2025-04-11 09:06:07,418 - Client - INFO - Epoch [2/10], Step [20], Loss: 0.0059
+2025-04-11 09:06:08,202 - Client - INFO - Epoch [1/10], Step [120], Loss: 0.0012
+2025-04-11 09:06:08,915 - Client - INFO - Epoch [1/10] - Loss: 0.0523, Acc: 0.9856
+2025-04-11 09:06:08,955 - Client - INFO - Epoch [2/10], Step [30], Loss: 0.0056
+2025-04-11 09:06:09,662 - Client - INFO - Akurasi Model: 0.9990
+2025-04-11 09:06:09,663 - Client - INFO - Classification Report: {'0': {'precision': 0.998992950654582, 'recall': 1.0, 'f1-score': 0.9994962216624685, 'support': 992.0}, '4': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.998992950654582, 'macro avg': {'precision': 0.499496475327291, 'recall': 0.5, 'f1-score': 0.49974811083123427, 'support': 993.0}, 'weighted avg': {'precision': 0.9979869154575483, 'recall': 0.998992950654582, 'f1-score': 0.9984896796466957, 'support': 993.0}}
+2025-04-11 09:06:09,663 - Client - INFO - Confusion Matrix:
+[[992   0]
+ [  1   0]]
+2025-04-11 09:06:09,663 - Client - INFO - New best validation accuracy: 0.9990
+2025-04-11 09:06:10,218 - Client - INFO - Epoch [2/10], Step [40], Loss: 0.0010
+2025-04-11 09:06:11,156 - Client - INFO - Epoch [2/10], Step [10], Loss: 0.0052
+2025-04-11 09:06:11,515 - Client - INFO - Epoch [2/10], Step [50], Loss: 0.0034
+2025-04-11 09:06:12,413 - Client - INFO - Epoch [2/10], Step [20], Loss: 0.0011
+2025-04-11 09:06:12,757 - Client - INFO - Epoch [2/10], Step [60], Loss: 0.0004
+2025-04-11 09:06:13,709 - Client - INFO - Epoch [2/10], Step [30], Loss: 0.0015
+2025-04-11 09:06:14,098 - Client - INFO - Epoch [2/10], Step [70], Loss: 0.0012
+2025-04-11 09:06:15,215 - Client - INFO - Epoch [2/10], Step [40], Loss: 0.0039
+2025-04-11 09:06:15,700 - Client - INFO - Epoch [2/10], Step [80], Loss: 0.0012
+2025-04-11 09:06:16,730 - Client - INFO - Epoch [2/10], Step [50], Loss: 0.0025
+2025-04-11 09:06:17,191 - Client - INFO - Epoch [2/10], Step [90], Loss: 0.0008
+2025-04-11 09:06:18,212 - Client - INFO - Epoch [2/10], Step [60], Loss: 0.0020
+2025-04-11 09:06:18,691 - Client - INFO - Epoch [2/10], Step [100], Loss: 0.0037
+2025-04-11 09:06:19,799 - Client - INFO - Epoch [2/10], Step [70], Loss: 0.0009
+2025-04-11 09:06:20,244 - Client - INFO - Epoch [2/10], Step [110], Loss: 0.0014
+2025-04-11 09:06:21,368 - Client - INFO - Epoch [2/10], Step [80], Loss: 0.0080
+2025-04-11 09:06:21,877 - Client - INFO - Epoch [2/10], Step [120], Loss: 0.0015
+2025-04-11 09:06:22,602 - Client - INFO - Epoch [2/10] - Loss: 0.0198, Acc: 0.9980
+2025-04-11 09:06:22,943 - Client - INFO - Epoch [2/10], Step [90], Loss: 0.0016
+2025-04-11 09:06:23,360 - Client - INFO - Akurasi Model: 1.0000
+2025-04-11 09:06:23,360 - Client - INFO - Classification Report: {'0': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'accuracy': 1.0, 'macro avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'weighted avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}}
+2025-04-11 09:06:23,360 - Client - INFO - Confusion Matrix:
+[[994]]
+2025-04-11 09:06:24,403 - Client - INFO - Epoch [2/10], Step [100], Loss: 0.0014
+2025-04-11 09:06:24,883 - Client - INFO - Epoch [3/10], Step [10], Loss: 0.0030
+2025-04-11 09:06:25,989 - Client - INFO - Epoch [2/10], Step [110], Loss: 0.0017
+2025-04-11 09:06:26,469 - Client - INFO - Epoch [3/10], Step [20], Loss: 0.0007
+2025-04-11 09:06:27,559 - Client - INFO - Epoch [2/10], Step [120], Loss: 0.0011
+2025-04-11 09:06:28,047 - Client - INFO - Epoch [3/10], Step [30], Loss: 0.4633
+2025-04-11 09:06:28,263 - Client - INFO - Epoch [2/10] - Loss: 0.0167, Acc: 0.9980
+2025-04-11 09:06:28,972 - Client - INFO - Akurasi Model: 0.9990
+2025-04-11 09:06:28,972 - Client - INFO - Classification Report: {'0': {'precision': 0.998992950654582, 'recall': 1.0, 'f1-score': 0.9994962216624685, 'support': 992.0}, '4': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.998992950654582, 'macro avg': {'precision': 0.499496475327291, 'recall': 0.5, 'f1-score': 0.49974811083123427, 'support': 993.0}, 'weighted avg': {'precision': 0.9979869154575483, 'recall': 0.998992950654582, 'f1-score': 0.9984896796466957, 'support': 993.0}}
+2025-04-11 09:06:28,973 - Client - INFO - Confusion Matrix:
+[[992   0]
+ [  1   0]]
+2025-04-11 09:06:29,329 - Client - INFO - Epoch [3/10], Step [40], Loss: 0.0140
+2025-04-11 09:06:30,281 - Client - INFO - Epoch [3/10], Step [10], Loss: 0.0003
+2025-04-11 09:06:30,624 - Client - INFO - Epoch [3/10], Step [50], Loss: 0.0016
+2025-04-11 09:06:31,556 - Client - INFO - Epoch [3/10], Step [20], Loss: 0.0005
+2025-04-11 09:06:31,929 - Client - INFO - Epoch [3/10], Step [60], Loss: 0.0014
+2025-04-11 09:06:32,898 - Client - INFO - Epoch [3/10], Step [30], Loss: 0.0013
+2025-04-11 09:06:33,294 - Client - INFO - Epoch [3/10], Step [70], Loss: 0.0080
+2025-04-11 09:06:34,380 - Client - INFO - Epoch [3/10], Step [40], Loss: 0.0038
+2025-04-11 09:06:34,843 - Client - INFO - Epoch [3/10], Step [80], Loss: 0.0011
+2025-04-11 09:06:35,797 - Client - INFO - Epoch [3/10], Step [50], Loss: 0.0029
+2025-04-11 09:06:36,246 - Client - INFO - Epoch [3/10], Step [90], Loss: 0.0014
+2025-04-11 09:06:37,233 - Client - INFO - Epoch [3/10], Step [60], Loss: 0.0028
+2025-04-11 09:06:37,711 - Client - INFO - Epoch [3/10], Step [100], Loss: 0.0019
+2025-04-11 09:06:38,863 - Client - INFO - Epoch [3/10], Step [70], Loss: 0.0009
+2025-04-11 09:06:39,351 - Client - INFO - Epoch [3/10], Step [110], Loss: 0.0004
+2025-04-11 09:06:40,389 - Client - INFO - Epoch [3/10], Step [80], Loss: 0.1902
+2025-04-11 09:06:40,865 - Client - INFO - Epoch [3/10], Step [120], Loss: 0.0007
+2025-04-11 09:06:41,574 - Client - INFO - Epoch [3/10] - Loss: 0.0160, Acc: 0.9980
+2025-04-11 09:06:41,883 - Client - INFO - Epoch [3/10], Step [90], Loss: 0.0043
+2025-04-11 09:06:42,285 - Client - INFO - Akurasi Model: 1.0000
+2025-04-11 09:06:42,286 - Client - INFO - Classification Report: {'0': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'accuracy': 1.0, 'macro avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'weighted avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}}
+2025-04-11 09:06:42,286 - Client - INFO - Confusion Matrix:
+[[994]]
+2025-04-11 09:06:43,191 - Client - INFO - Epoch [3/10], Step [100], Loss: 0.0014
+2025-04-11 09:06:43,656 - Client - INFO - Epoch [4/10], Step [10], Loss: 0.0005
+2025-04-11 09:06:44,719 - Client - INFO - Epoch [3/10], Step [110], Loss: 0.0007
+2025-04-11 09:06:45,188 - Client - INFO - Epoch [4/10], Step [20], Loss: 0.0005
+2025-04-11 09:06:46,274 - Client - INFO - Epoch [3/10], Step [120], Loss: 0.0037
+2025-04-11 09:06:46,757 - Client - INFO - Epoch [4/10], Step [30], Loss: 0.0016
+2025-04-11 09:06:46,986 - Client - INFO - Epoch [3/10] - Loss: 0.0154, Acc: 0.9980
+2025-04-11 09:06:47,681 - Client - INFO - Akurasi Model: 0.9990
+2025-04-11 09:06:47,682 - Client - INFO - Classification Report: {'0': {'precision': 0.998992950654582, 'recall': 1.0, 'f1-score': 0.9994962216624685, 'support': 992.0}, '4': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.998992950654582, 'macro avg': {'precision': 0.499496475327291, 'recall': 0.5, 'f1-score': 0.49974811083123427, 'support': 993.0}, 'weighted avg': {'precision': 0.9979869154575483, 'recall': 0.998992950654582, 'f1-score': 0.9984896796466957, 'support': 993.0}}
+2025-04-11 09:06:47,682 - Client - INFO - Confusion Matrix:
+[[992   0]
+ [  1   0]]
+2025-04-11 09:06:48,035 - Client - INFO - Epoch [4/10], Step [40], Loss: 0.0035
+2025-04-11 09:06:48,992 - Client - INFO - Epoch [4/10], Step [10], Loss: 0.1265
+2025-04-11 09:06:49,427 - Client - INFO - Epoch [4/10], Step [50], Loss: 0.1490
+2025-04-11 09:06:50,514 - Client - INFO - Epoch [4/10], Step [20], Loss: 0.0031
+2025-04-11 09:06:50,993 - Client - INFO - Epoch [4/10], Step [60], Loss: 0.0044
+2025-04-11 09:06:52,100 - Client - INFO - Epoch [4/10], Step [30], Loss: 0.0017
+2025-04-11 09:06:52,581 - Client - INFO - Epoch [4/10], Step [70], Loss: 0.0025
+2025-04-11 09:06:53,676 - Client - INFO - Epoch [4/10], Step [40], Loss: 0.0014
+2025-04-11 09:06:54,174 - Client - INFO - Epoch [4/10], Step [80], Loss: 0.0014
+2025-04-11 09:06:55,248 - Client - INFO - Epoch [4/10], Step [50], Loss: 0.0005
+2025-04-11 09:06:55,708 - Client - INFO - Epoch [4/10], Step [90], Loss: 0.0012
+2025-04-11 09:06:56,785 - Client - INFO - Epoch [4/10], Step [60], Loss: 0.0004
+2025-04-11 09:06:57,252 - Client - INFO - Epoch [4/10], Step [100], Loss: 0.0003
+2025-04-11 09:06:58,289 - Client - INFO - Epoch [4/10], Step [70], Loss: 0.0010
+2025-04-11 09:06:58,776 - Client - INFO - Epoch [4/10], Step [110], Loss: 0.0009
+2025-04-11 09:06:59,842 - Client - INFO - Epoch [4/10], Step [80], Loss: 0.0012
+2025-04-11 09:07:00,328 - Client - INFO - Epoch [4/10], Step [120], Loss: 0.0003
+2025-04-11 09:07:01,038 - Client - INFO - Epoch [4/10] - Loss: 0.0204, Acc: 0.9980
+2025-04-11 09:07:01,345 - Client - INFO - Epoch [4/10], Step [90], Loss: 0.0082
+2025-04-11 09:07:01,746 - Client - INFO - Akurasi Model: 1.0000
+2025-04-11 09:07:01,746 - Client - INFO - Classification Report: {'0': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'accuracy': 1.0, 'macro avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'weighted avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}}
+2025-04-11 09:07:01,747 - Client - INFO - Confusion Matrix:
+[[994]]
+2025-04-11 09:07:02,645 - Client - INFO - Epoch [4/10], Step [100], Loss: 0.0021
+2025-04-11 09:07:03,071 - Client - INFO - Epoch [5/10], Step [10], Loss: 0.0190
+2025-04-11 09:07:04,040 - Client - INFO - Epoch [4/10], Step [110], Loss: 0.0010
+2025-04-11 09:07:04,495 - Client - INFO - Epoch [5/10], Step [20], Loss: 0.0103
+2025-04-11 09:07:05,521 - Client - INFO - Epoch [4/10], Step [120], Loss: 0.0009
+2025-04-11 09:07:05,982 - Client - INFO - Epoch [5/10], Step [30], Loss: 0.0062
+2025-04-11 09:07:06,202 - Client - INFO - Epoch [4/10] - Loss: 0.0138, Acc: 0.9980
+2025-04-11 09:07:06,922 - Client - INFO - Akurasi Model: 0.9990
+2025-04-11 09:07:06,923 - Client - INFO - Classification Report: {'0': {'precision': 0.998992950654582, 'recall': 1.0, 'f1-score': 0.9994962216624685, 'support': 992.0}, '4': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.998992950654582, 'macro avg': {'precision': 0.499496475327291, 'recall': 0.5, 'f1-score': 0.49974811083123427, 'support': 993.0}, 'weighted avg': {'precision': 0.9979869154575483, 'recall': 0.998992950654582, 'f1-score': 0.9984896796466957, 'support': 993.0}}
+2025-04-11 09:07:06,923 - Client - INFO - Confusion Matrix:
+[[992   0]
+ [  1   0]]
+2025-04-11 09:07:07,303 - Client - INFO - Epoch [5/10], Step [40], Loss: 0.0012
+2025-04-11 09:07:08,239 - Client - INFO - Epoch [5/10], Step [10], Loss: 0.1560
+2025-04-11 09:07:08,631 - Client - INFO - Epoch [5/10], Step [50], Loss: 0.0004
+2025-04-11 09:07:09,776 - Client - INFO - Epoch [5/10], Step [20], Loss: 0.0023
+2025-04-11 09:07:10,254 - Client - INFO - Epoch [5/10], Step [60], Loss: 0.0018
+2025-04-11 09:07:11,395 - Client - INFO - Epoch [5/10], Step [30], Loss: 0.0012
+2025-04-11 09:07:11,854 - Client - INFO - Epoch [5/10], Step [70], Loss: 0.0004
+2025-04-11 09:07:12,987 - Client - INFO - Epoch [5/10], Step [40], Loss: 0.0012
+2025-04-11 09:07:13,478 - Client - INFO - Epoch [5/10], Step [80], Loss: 0.0146
+2025-04-11 09:07:14,578 - Client - INFO - Epoch [5/10], Step [50], Loss: 0.0014
+2025-04-11 09:07:15,042 - Client - INFO - Epoch [5/10], Step [90], Loss: 0.0035
+2025-04-11 09:07:16,129 - Client - INFO - Epoch [5/10], Step [60], Loss: 0.0008
+2025-04-11 09:07:16,572 - Client - INFO - Epoch [5/10], Step [100], Loss: 0.0010
+2025-04-11 09:07:17,497 - Client - INFO - Epoch [5/10], Step [70], Loss: 0.0010
+2025-04-11 09:07:17,979 - Client - INFO - Epoch [5/10], Step [110], Loss: 0.0003
+2025-04-11 09:07:19,043 - Client - INFO - Epoch [5/10], Step [80], Loss: 0.0002
+2025-04-11 09:07:19,565 - Client - INFO - Epoch [5/10], Step [120], Loss: 0.0003
+2025-04-11 09:07:20,282 - Client - INFO - Epoch [5/10] - Loss: 0.0117, Acc: 0.9980
+2025-04-11 09:07:20,568 - Client - INFO - Epoch [5/10], Step [90], Loss: 0.0007
+2025-04-11 09:07:21,070 - Client - INFO - Akurasi Model: 1.0000
+2025-04-11 09:07:21,070 - Client - INFO - Classification Report: {'0': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'accuracy': 1.0, 'macro avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'weighted avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}}
+2025-04-11 09:07:21,071 - Client - INFO - Confusion Matrix:
+[[994]]
+2025-04-11 09:07:21,918 - Client - INFO - Epoch [5/10], Step [100], Loss: 0.0027
+2025-04-11 09:07:22,428 - Client - INFO - Epoch [6/10], Step [10], Loss: 0.0001
+2025-04-11 09:07:23,280 - Client - INFO - Epoch [5/10], Step [110], Loss: 0.0095
+2025-04-11 09:07:23,807 - Client - INFO - Epoch [6/10], Step [20], Loss: 0.2829
+2025-04-11 09:07:24,647 - Client - INFO - Epoch [5/10], Step [120], Loss: 0.0010
+2025-04-11 09:07:25,168 - Client - INFO - Epoch [6/10], Step [30], Loss: 0.0028
+2025-04-11 09:07:25,273 - Client - INFO - Epoch [5/10] - Loss: 0.0125, Acc: 0.9980
+2025-04-11 09:07:26,004 - Client - INFO - Akurasi Model: 0.9990
+2025-04-11 09:07:26,004 - Client - INFO - Classification Report: {'0': {'precision': 0.998992950654582, 'recall': 1.0, 'f1-score': 0.9994962216624685, 'support': 992.0}, '4': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.998992950654582, 'macro avg': {'precision': 0.499496475327291, 'recall': 0.5, 'f1-score': 0.49974811083123427, 'support': 993.0}, 'weighted avg': {'precision': 0.9979869154575483, 'recall': 0.998992950654582, 'f1-score': 0.9984896796466957, 'support': 993.0}}
+2025-04-11 09:07:26,005 - Client - INFO - Confusion Matrix:
+[[992   0]
+ [  1   0]]
+2025-04-11 09:07:26,478 - Client - INFO - Epoch [6/10], Step [40], Loss: 0.0017
+2025-04-11 09:07:27,365 - Client - INFO - Epoch [6/10], Step [10], Loss: 0.0050
+2025-04-11 09:07:27,857 - Client - INFO - Epoch [6/10], Step [50], Loss: 0.0024
+2025-04-11 09:07:28,689 - Client - INFO - Epoch [6/10], Step [20], Loss: 0.0020
+2025-04-11 09:07:29,189 - Client - INFO - Epoch [6/10], Step [60], Loss: 0.0094
+2025-04-11 09:07:30,003 - Client - INFO - Epoch [6/10], Step [30], Loss: 0.0006
+2025-04-11 09:07:30,499 - Client - INFO - Epoch [6/10], Step [70], Loss: 0.0016
+2025-04-11 09:07:31,318 - Client - INFO - Epoch [6/10], Step [40], Loss: 0.0020
+2025-04-11 09:07:31,815 - Client - INFO - Epoch [6/10], Step [80], Loss: 0.0003
+2025-04-11 09:07:32,678 - Client - INFO - Epoch [6/10], Step [50], Loss: 0.0057
+2025-04-11 09:07:33,157 - Client - INFO - Epoch [6/10], Step [90], Loss: 0.0009
+2025-04-11 09:07:34,012 - Client - INFO - Epoch [6/10], Step [60], Loss: 0.0019
+2025-04-11 09:07:34,507 - Client - INFO - Epoch [6/10], Step [100], Loss: 0.2363
+2025-04-11 09:07:35,328 - Client - INFO - Epoch [6/10], Step [70], Loss: 0.0027
+2025-04-11 09:07:35,841 - Client - INFO - Epoch [6/10], Step [110], Loss: 0.0022
+2025-04-11 09:07:36,667 - Client - INFO - Epoch [6/10], Step [80], Loss: 0.0024
+2025-04-11 09:07:37,199 - Client - INFO - Epoch [6/10], Step [120], Loss: 0.0018
+2025-04-11 09:07:37,840 - Client - INFO - Epoch [6/10] - Loss: 0.0158, Acc: 0.9980
+2025-04-11 09:07:38,054 - Client - INFO - Epoch [6/10], Step [90], Loss: 0.0025
+2025-04-11 09:07:38,613 - Client - INFO - Akurasi Model: 1.0000
+2025-04-11 09:07:38,613 - Client - INFO - Classification Report: {'0': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'accuracy': 1.0, 'macro avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'weighted avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}}
+2025-04-11 09:07:38,614 - Client - INFO - Confusion Matrix:
+[[994]]
+2025-04-11 09:07:39,477 - Client - INFO - Epoch [6/10], Step [100], Loss: 0.0010
+2025-04-11 09:07:40,221 - Client - INFO - Epoch [7/10], Step [10], Loss: 0.1677
+2025-04-11 09:07:41,328 - Client - INFO - Epoch [6/10], Step [110], Loss: 0.0006
+2025-04-11 09:07:41,938 - Client - INFO - Epoch [7/10], Step [20], Loss: 0.0042
+2025-04-11 09:07:42,849 - Client - INFO - Epoch [6/10], Step [120], Loss: 0.0009
+2025-04-11 09:07:43,477 - Client - INFO - Epoch [7/10], Step [30], Loss: 0.0010
+2025-04-11 09:07:43,564 - Client - INFO - Epoch [6/10] - Loss: 0.0137, Acc: 0.9980
+2025-04-11 09:07:44,362 - Client - INFO - Akurasi Model: 0.9990
+2025-04-11 09:07:44,362 - Client - INFO - Classification Report: {'0': {'precision': 0.998992950654582, 'recall': 1.0, 'f1-score': 0.9994962216624685, 'support': 992.0}, '4': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.998992950654582, 'macro avg': {'precision': 0.499496475327291, 'recall': 0.5, 'f1-score': 0.49974811083123427, 'support': 993.0}, 'weighted avg': {'precision': 0.9979869154575483, 'recall': 0.998992950654582, 'f1-score': 0.9984896796466957, 'support': 993.0}}
+2025-04-11 09:07:44,363 - Client - INFO - Confusion Matrix:
+[[992   0]
+ [  1   0]]
+2025-04-11 09:07:45,002 - Client - INFO - Epoch [7/10], Step [40], Loss: 0.0004
+2025-04-11 09:07:45,939 - Client - INFO - Epoch [7/10], Step [10], Loss: 0.0007
+2025-04-11 09:07:46,593 - Client - INFO - Epoch [7/10], Step [50], Loss: 0.0002
+2025-04-11 09:07:47,548 - Client - INFO - Epoch [7/10], Step [20], Loss: 0.0009
+2025-04-11 09:07:48,161 - Client - INFO - Epoch [7/10], Step [60], Loss: 0.0013
+2025-04-11 09:07:49,109 - Client - INFO - Epoch [7/10], Step [30], Loss: 0.0011
+2025-04-11 09:07:49,726 - Client - INFO - Epoch [7/10], Step [70], Loss: 0.0028
+2025-04-11 09:07:50,692 - Client - INFO - Epoch [7/10], Step [40], Loss: 0.0023
+2025-04-11 09:07:51,327 - Client - INFO - Epoch [7/10], Step [80], Loss: 0.0024
+2025-04-11 09:07:52,288 - Client - INFO - Epoch [7/10], Step [50], Loss: 0.0024
+2025-04-11 09:07:52,911 - Client - INFO - Epoch [7/10], Step [90], Loss: 0.0014
+2025-04-11 09:07:53,900 - Client - INFO - Epoch [7/10], Step [60], Loss: 0.0007
+2025-04-11 09:07:54,521 - Client - INFO - Epoch [7/10], Step [100], Loss: 0.0039
+2025-04-11 09:07:55,491 - Client - INFO - Epoch [7/10], Step [70], Loss: 0.0007
+2025-04-11 09:07:56,120 - Client - INFO - Epoch [7/10], Step [110], Loss: 0.0032
+2025-04-11 09:07:57,043 - Client - INFO - Epoch [7/10], Step [80], Loss: 0.0010
+2025-04-11 09:07:57,651 - Client - INFO - Epoch [7/10], Step [120], Loss: 0.0007
+2025-04-11 09:07:58,307 - Client - INFO - Epoch [7/10] - Loss: 0.0155, Acc: 0.9980
+2025-04-11 09:07:58,481 - Client - INFO - Epoch [7/10], Step [90], Loss: 0.0035
+2025-04-11 09:07:59,067 - Client - INFO - Akurasi Model: 1.0000
+2025-04-11 09:07:59,068 - Client - INFO - Classification Report: {'0': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'accuracy': 1.0, 'macro avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'weighted avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}}
+2025-04-11 09:07:59,068 - Client - INFO - Confusion Matrix:
+[[994]]
+2025-04-11 09:07:59,785 - Client - INFO - Epoch [7/10], Step [100], Loss: 0.0012
+2025-04-11 09:08:00,393 - Client - INFO - Epoch [8/10], Step [10], Loss: 0.0004
+2025-04-11 09:08:01,109 - Client - INFO - Epoch [7/10], Step [110], Loss: 0.1149
+2025-04-11 09:08:01,708 - Client - INFO - Epoch [8/10], Step [20], Loss: 0.0013
+2025-04-11 09:08:02,410 - Client - INFO - Epoch [7/10], Step [120], Loss: 0.1314
+2025-04-11 09:08:03,016 - Client - INFO - Epoch [7/10] - Loss: 0.0121, Acc: 0.9980
+2025-04-11 09:08:03,034 - Client - INFO - Epoch [8/10], Step [30], Loss: 0.0007
+2025-04-11 09:08:03,782 - Client - INFO - Akurasi Model: 0.9990
+2025-04-11 09:08:03,782 - Client - INFO - Classification Report: {'0': {'precision': 0.998992950654582, 'recall': 1.0, 'f1-score': 0.9994962216624685, 'support': 992.0}, '4': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.998992950654582, 'macro avg': {'precision': 0.499496475327291, 'recall': 0.5, 'f1-score': 0.49974811083123427, 'support': 993.0}, 'weighted avg': {'precision': 0.9979869154575483, 'recall': 0.998992950654582, 'f1-score': 0.9984896796466957, 'support': 993.0}}
+2025-04-11 09:08:03,783 - Client - INFO - Confusion Matrix:
+[[992   0]
+ [  1   0]]
+2025-04-11 09:08:04,352 - Client - INFO - Epoch [8/10], Step [40], Loss: 0.0040
+2025-04-11 09:08:05,072 - Client - INFO - Epoch [8/10], Step [10], Loss: 0.0007
+2025-04-11 09:08:05,639 - Client - INFO - Epoch [8/10], Step [50], Loss: 0.0150
+2025-04-11 09:08:06,419 - Client - INFO - Epoch [8/10], Step [20], Loss: 0.0030
+2025-04-11 09:08:07,018 - Client - INFO - Epoch [8/10], Step [60], Loss: 0.0027
+2025-04-11 09:08:07,909 - Client - INFO - Epoch [8/10], Step [30], Loss: 0.0015
+2025-04-11 09:08:08,510 - Client - INFO - Epoch [8/10], Step [70], Loss: 0.0005
+2025-04-11 09:08:09,470 - Client - INFO - Epoch [8/10], Step [40], Loss: 0.0018
+2025-04-11 09:08:10,103 - Client - INFO - Epoch [8/10], Step [80], Loss: 0.0002
+2025-04-11 09:08:11,120 - Client - INFO - Epoch [8/10], Step [50], Loss: 0.1611
+2025-04-11 09:08:11,863 - Client - INFO - Epoch [8/10], Step [90], Loss: 0.0002
+2025-04-11 09:08:12,716 - Client - INFO - Epoch [8/10], Step [60], Loss: 0.0022
+2025-04-11 09:08:13,378 - Client - INFO - Epoch [8/10], Step [100], Loss: 0.0001
+2025-04-11 09:08:14,329 - Client - INFO - Epoch [8/10], Step [70], Loss: 0.0117
+2025-04-11 09:08:14,936 - Client - INFO - Epoch [8/10], Step [110], Loss: 0.0001
+2025-04-11 09:08:15,844 - Client - INFO - Epoch [8/10], Step [80], Loss: 0.0009
+2025-04-11 09:08:16,451 - Client - INFO - Epoch [8/10], Step [120], Loss: 0.0001
+2025-04-11 09:08:17,327 - Client - INFO - Epoch [8/10] - Loss: 0.0127, Acc: 0.9980
+2025-04-11 09:08:17,555 - Client - INFO - Epoch [8/10], Step [90], Loss: 0.0027
+2025-04-11 09:08:18,170 - Client - INFO - Akurasi Model: 1.0000
+2025-04-11 09:08:18,170 - Client - INFO - Classification Report: {'0': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'accuracy': 1.0, 'macro avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'weighted avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}}
+2025-04-11 09:08:18,171 - Client - INFO - Confusion Matrix:
+[[994]]
+2025-04-11 09:08:18,927 - Client - INFO - Epoch [8/10], Step [100], Loss: 0.0014
+2025-04-11 09:08:19,516 - Client - INFO - Epoch [9/10], Step [10], Loss: 0.0046
+2025-04-11 09:08:20,430 - Client - INFO - Epoch [8/10], Step [110], Loss: 0.0008
+2025-04-11 09:08:21,122 - Client - INFO - Epoch [9/10], Step [20], Loss: 0.0058
+2025-04-11 09:08:22,245 - Client - INFO - Epoch [8/10], Step [120], Loss: 0.0005
+2025-04-11 09:08:22,874 - Client - INFO - Epoch [9/10], Step [30], Loss: 0.0023
+2025-04-11 09:08:22,946 - Client - INFO - Epoch [8/10] - Loss: 0.0113, Acc: 0.9980
+2025-04-11 09:08:23,652 - Client - INFO - Akurasi Model: 0.9990
+2025-04-11 09:08:23,652 - Client - INFO - Classification Report: {'0': {'precision': 0.998992950654582, 'recall': 1.0, 'f1-score': 0.9994962216624685, 'support': 992.0}, '4': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.998992950654582, 'macro avg': {'precision': 0.499496475327291, 'recall': 0.5, 'f1-score': 0.49974811083123427, 'support': 993.0}, 'weighted avg': {'precision': 0.9979869154575483, 'recall': 0.998992950654582, 'f1-score': 0.9984896796466957, 'support': 993.0}}
+2025-04-11 09:08:23,653 - Client - INFO - Confusion Matrix:
+[[992   0]
+ [  1   0]]
+2025-04-11 09:08:24,190 - Client - INFO - Epoch [9/10], Step [40], Loss: 0.0007
+2025-04-11 09:08:25,035 - Client - INFO - Epoch [9/10], Step [10], Loss: 0.0002
+2025-04-11 09:08:25,584 - Client - INFO - Epoch [9/10], Step [50], Loss: 0.0018
+2025-04-11 09:08:26,511 - Client - INFO - Epoch [9/10], Step [20], Loss: 0.0001
+2025-04-11 09:08:27,284 - Client - INFO - Epoch [9/10], Step [60], Loss: 0.0015
+2025-04-11 09:08:28,215 - Client - INFO - Epoch [9/10], Step [30], Loss: 0.0037
+2025-04-11 09:08:28,808 - Client - INFO - Epoch [9/10], Step [70], Loss: 0.0019
+2025-04-11 09:08:29,746 - Client - INFO - Epoch [9/10], Step [40], Loss: 0.0068
+2025-04-11 09:08:30,368 - Client - INFO - Epoch [9/10], Step [80], Loss: 0.0032
+2025-04-11 09:08:31,302 - Client - INFO - Epoch [9/10], Step [50], Loss: 0.0012
+2025-04-11 09:08:31,897 - Client - INFO - Epoch [9/10], Step [90], Loss: 0.0052
+2025-04-11 09:08:32,968 - Client - INFO - Epoch [9/10], Step [60], Loss: 0.0010
+2025-04-11 09:08:33,635 - Client - INFO - Epoch [9/10], Step [100], Loss: 0.0107
+2025-04-11 09:08:34,610 - Client - INFO - Epoch [9/10], Step [70], Loss: 0.0019
+2025-04-11 09:08:35,187 - Client - INFO - Epoch [9/10], Step [110], Loss: 0.0011
+2025-04-11 09:08:36,122 - Client - INFO - Epoch [9/10], Step [80], Loss: 0.0029
+2025-04-11 09:08:36,754 - Client - INFO - Epoch [9/10], Step [120], Loss: 0.0010
+2025-04-11 09:08:37,465 - Client - INFO - Epoch [9/10] - Loss: 0.0137, Acc: 0.9980
+2025-04-11 09:08:37,633 - Client - INFO - Epoch [9/10], Step [90], Loss: 0.0007
+2025-04-11 09:08:38,173 - Client - INFO - Akurasi Model: 1.0000
+2025-04-11 09:08:38,173 - Client - INFO - Classification Report: {'0': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'accuracy': 1.0, 'macro avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'weighted avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}}
+2025-04-11 09:08:38,174 - Client - INFO - Confusion Matrix:
+[[994]]
+2025-04-11 09:08:38,970 - Client - INFO - Epoch [9/10], Step [100], Loss: 0.0008
+2025-04-11 09:08:39,573 - Client - INFO - Epoch [10/10], Step [10], Loss: 0.0019
+2025-04-11 09:08:40,442 - Client - INFO - Epoch [9/10], Step [110], Loss: 0.0005
+2025-04-11 09:08:41,055 - Client - INFO - Epoch [10/10], Step [20], Loss: 0.0007
+2025-04-11 09:08:41,973 - Client - INFO - Epoch [9/10], Step [120], Loss: 0.0059
+2025-04-11 09:08:42,584 - Client - INFO - Epoch [10/10], Step [30], Loss: 0.0005
+2025-04-11 09:08:42,654 - Client - INFO - Epoch [9/10] - Loss: 0.0148, Acc: 0.9980
+2025-04-11 09:08:43,354 - Client - INFO - Akurasi Model: 0.9990
+2025-04-11 09:08:43,355 - Client - INFO - Classification Report: {'0': {'precision': 0.998992950654582, 'recall': 1.0, 'f1-score': 0.9994962216624685, 'support': 992.0}, '4': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.998992950654582, 'macro avg': {'precision': 0.499496475327291, 'recall': 0.5, 'f1-score': 0.49974811083123427, 'support': 993.0}, 'weighted avg': {'precision': 0.9979869154575483, 'recall': 0.998992950654582, 'f1-score': 0.9984896796466957, 'support': 993.0}}
+2025-04-11 09:08:43,355 - Client - INFO - Confusion Matrix:
+[[992   0]
+ [  1   0]]
+2025-04-11 09:08:43,833 - Client - INFO - Epoch [10/10], Step [40], Loss: 0.0004
+2025-04-11 09:08:44,630 - Client - INFO - Epoch [10/10], Step [10], Loss: 0.0013
+2025-04-11 09:08:45,111 - Client - INFO - Epoch [10/10], Step [50], Loss: 0.0003
+2025-04-11 09:08:45,933 - Client - INFO - Epoch [10/10], Step [20], Loss: 0.0004
+2025-04-11 09:08:46,515 - Client - INFO - Epoch [10/10], Step [60], Loss: 0.0259
+2025-04-11 09:08:47,403 - Client - INFO - Epoch [10/10], Step [30], Loss: 0.0002
+2025-04-11 09:08:47,943 - Client - INFO - Epoch [10/10], Step [70], Loss: 0.0130
+2025-04-11 09:08:48,853 - Client - INFO - Epoch [10/10], Step [40], Loss: 0.4270
+2025-04-11 09:08:49,402 - Client - INFO - Epoch [10/10], Step [80], Loss: 0.0013
+2025-04-11 09:08:50,322 - Client - INFO - Epoch [10/10], Step [50], Loss: 0.0088
+2025-04-11 09:08:50,953 - Client - INFO - Epoch [10/10], Step [90], Loss: 0.0006
+2025-04-11 09:08:51,849 - Client - INFO - Epoch [10/10], Step [60], Loss: 0.0008
+2025-04-11 09:08:52,467 - Client - INFO - Epoch [10/10], Step [100], Loss: 0.0002
+2025-04-11 09:08:53,386 - Client - INFO - Epoch [10/10], Step [70], Loss: 0.0014
+2025-04-11 09:08:54,003 - Client - INFO - Epoch [10/10], Step [110], Loss: 0.0002
+2025-04-11 09:08:54,933 - Client - INFO - Epoch [10/10], Step [80], Loss: 0.0044
+2025-04-11 09:08:55,541 - Client - INFO - Epoch [10/10], Step [120], Loss: 0.0002
+2025-04-11 09:08:56,196 - Client - INFO - Epoch [10/10] - Loss: 0.0122, Acc: 0.9980
+2025-04-11 09:08:56,370 - Client - INFO - Epoch [10/10], Step [90], Loss: 0.0015
+2025-04-11 09:08:56,953 - Client - INFO - Akurasi Model: 1.0000
+2025-04-11 09:08:56,953 - Client - INFO - Classification Report: {'0': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'accuracy': 1.0, 'macro avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'weighted avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}}
+2025-04-11 09:08:56,953 - Client - INFO - Confusion Matrix:
+[[994]]
+2025-04-11 09:08:56,954 - Client - INFO - Training selesai
+2025-04-11 09:08:57,712 - Client - INFO - Epoch [10/10], Step [100], Loss: 0.0014
+2025-04-11 09:08:57,716 - Client - INFO - Akurasi Model: 1.0000
+2025-04-11 09:08:57,717 - Client - INFO - Classification Report: {'0': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'accuracy': 1.0, 'macro avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'weighted avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}}
+2025-04-11 09:08:57,717 - Client - INFO - Confusion Matrix:
+[[994]]
+2025-04-11 09:08:57,717 - Client - INFO - Akurasi model setelah pelatihan lokal: 1.0000
+2025-04-11 09:08:57,812 - Client - INFO - Noise diterapkan dengan sensitivity=0.1, epsilon=2.0
+2025-04-11 09:08:58,573 - Client - INFO - Akurasi Model: 1.0000
+2025-04-11 09:08:58,573 - Client - INFO - Classification Report: {'0': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'accuracy': 1.0, 'macro avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}, 'weighted avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 994.0}}
+2025-04-11 09:08:58,574 - Client - INFO - Confusion Matrix:
+[[994]]
+2025-04-11 09:08:58,574 - Client - INFO - Akurasi model setelah penambahan noise: 1.0000
+2025-04-11 09:08:58,785 - Client - INFO - Mengirim model (ukuran: 29600262 bytes)
+2025-04-11 09:08:58,790 - Client - INFO - Model lokal terkirim ke server
+2025-04-11 09:08:58,811 - Client - INFO - Mengirim data validasi (ukuran: 1026566 bytes)
+2025-04-11 09:08:58,942 - Client - INFO - Epoch [10/10], Step [110], Loss: 0.0006
+2025-04-11 09:09:00,022 - Client - INFO - Epoch [10/10], Step [120], Loss: 0.0007
+2025-04-11 09:09:00,504 - Client - INFO - Epoch [10/10] - Loss: 0.0153, Acc: 0.9980
+2025-04-11 09:09:01,003 - Client - INFO - Data validasi terkirim ke server
+2025-04-11 09:09:01,139 - Client - INFO - Akurasi Model: 0.9990
+2025-04-11 09:09:01,139 - Client - INFO - Classification Report: {'0': {'precision': 0.998992950654582, 'recall': 1.0, 'f1-score': 0.9994962216624685, 'support': 992.0}, '4': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.998992950654582, 'macro avg': {'precision': 0.499496475327291, 'recall': 0.5, 'f1-score': 0.49974811083123427, 'support': 993.0}, 'weighted avg': {'precision': 0.9979869154575483, 'recall': 0.998992950654582, 'f1-score': 0.9984896796466957, 'support': 993.0}}
+2025-04-11 09:09:01,139 - Client - INFO - Confusion Matrix:
+[[992   0]
+ [  1   0]]
+2025-04-11 09:09:01,139 - Client - INFO - Training selesai
+2025-04-11 09:09:01,756 - Client - INFO - Akurasi Model: 0.9990
+2025-04-11 09:09:01,757 - Client - INFO - Classification Report: {'0': {'precision': 0.998992950654582, 'recall': 1.0, 'f1-score': 0.9994962216624685, 'support': 992.0}, '4': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.998992950654582, 'macro avg': {'precision': 0.499496475327291, 'recall': 0.5, 'f1-score': 0.49974811083123427, 'support': 993.0}, 'weighted avg': {'precision': 0.9979869154575483, 'recall': 0.998992950654582, 'f1-score': 0.9984896796466957, 'support': 993.0}}
+2025-04-11 09:09:01,757 - Client - INFO - Confusion Matrix:
+[[992   0]
+ [  1   0]]
+2025-04-11 09:09:01,757 - Client - INFO - Akurasi model setelah pelatihan lokal: 0.9990
+2025-04-11 09:09:01,816 - Client - INFO - Noise diterapkan dengan sensitivity=0.1, epsilon=2.0
+2025-04-11 09:09:02,452 - Client - ERROR - Error saat menerima model global yang diperbarui: Tidak dapat membaca ukuran data model global yang diperbarui
+Traceback (most recent call last):
+  File "C:\Danann\1. Projects\2. Machine Learning\Python\Federated Learning\fl-ecg-distributed-systems\client.py", line 461, in <module>
+    raise ValueError("Tidak dapat membaca ukuran data model global yang diperbarui")
+ValueError: Tidak dapat membaca ukuran data model global yang diperbarui
+2025-04-11 09:09:02,453 - Client - INFO - Klien 1 selesai.
+2025-04-11 09:09:02,582 - Client - INFO - Akurasi Model: 0.9990
+2025-04-11 09:09:02,582 - Client - INFO - Classification Report: {'0': {'precision': 0.998992950654582, 'recall': 1.0, 'f1-score': 0.9994962216624685, 'support': 992.0}, '4': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.998992950654582, 'macro avg': {'precision': 0.499496475327291, 'recall': 0.5, 'f1-score': 0.49974811083123427, 'support': 993.0}, 'weighted avg': {'precision': 0.9979869154575483, 'recall': 0.998992950654582, 'f1-score': 0.9984896796466957, 'support': 993.0}}
+2025-04-11 09:09:02,582 - Client - INFO - Confusion Matrix:
+[[992   0]
+ [  1   0]]
+2025-04-11 09:09:02,582 - Client - INFO - Akurasi model setelah penambahan noise: 0.9990
+2025-04-11 09:09:02,747 - Client - INFO - Mengirim model (ukuran: 29600262 bytes)
+2025-04-11 09:09:02,753 - Client - INFO - Model lokal terkirim ke server
+2025-04-11 09:09:02,774 - Client - INFO - Mengirim data validasi (ukuran: 1025534 bytes)
+2025-04-11 09:09:03,578 - Client - INFO - Data validasi terkirim ke server
+2025-04-11 09:09:04,596 - Client - INFO - Bersiap menerima model global yang diperbarui (ukuran: 29602131 bytes)
+2025-04-11 09:09:04,596 - Client - INFO - Menerima 29602131 bytes data
+2025-04-11 09:09:04,600 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29536595 bytes
+2025-04-11 09:09:04,600 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29471059 bytes
+2025-04-11 09:09:04,601 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29405523 bytes
+2025-04-11 09:09:04,601 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29339987 bytes
+2025-04-11 09:09:04,601 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29274451 bytes
+2025-04-11 09:09:04,601 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29208915 bytes
+2025-04-11 09:09:04,601 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29143379 bytes
+2025-04-11 09:09:04,601 - Client - INFO - Menerima chunk: 65208 bytes, sisa: 29078171 bytes
+2025-04-11 09:09:04,622 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 29012635 bytes
+2025-04-11 09:09:04,622 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28947099 bytes
+2025-04-11 09:09:04,622 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28881563 bytes
+2025-04-11 09:09:04,622 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28816027 bytes
+2025-04-11 09:09:04,623 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28750491 bytes
+2025-04-11 09:09:04,623 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28684955 bytes
+2025-04-11 09:09:04,623 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28619419 bytes
+2025-04-11 09:09:04,623 - Client - INFO - Menerima chunk: 65208 bytes, sisa: 28554211 bytes
+2025-04-11 09:09:04,638 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28488675 bytes
+2025-04-11 09:09:04,638 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28423139 bytes
+2025-04-11 09:09:04,639 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28357603 bytes
+2025-04-11 09:09:04,639 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28292067 bytes
+2025-04-11 09:09:04,639 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28226531 bytes
+2025-04-11 09:09:04,640 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28160995 bytes
+2025-04-11 09:09:04,640 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 28095459 bytes
+2025-04-11 09:09:04,641 - Client - INFO - Menerima chunk: 65208 bytes, sisa: 28030251 bytes
+2025-04-11 09:09:04,654 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27964715 bytes
+2025-04-11 09:09:04,654 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27899179 bytes
+2025-04-11 09:09:04,655 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27833643 bytes
+2025-04-11 09:09:04,655 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27768107 bytes
+2025-04-11 09:09:04,656 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27702571 bytes
+2025-04-11 09:09:04,656 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27637035 bytes
+2025-04-11 09:09:04,657 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27571499 bytes
+2025-04-11 09:09:04,658 - Client - INFO - Menerima chunk: 65208 bytes, sisa: 27506291 bytes
+2025-04-11 09:09:04,669 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27440755 bytes
+2025-04-11 09:09:04,670 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27375219 bytes
+2025-04-11 09:09:04,671 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27309683 bytes
+2025-04-11 09:09:04,671 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27244147 bytes
+2025-04-11 09:09:04,672 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27178611 bytes
+2025-04-11 09:09:04,673 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27113075 bytes
+2025-04-11 09:09:04,673 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 27047539 bytes
+2025-04-11 09:09:04,674 - Client - INFO - Menerima chunk: 65208 bytes, sisa: 26982331 bytes
+2025-04-11 09:09:04,685 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26916795 bytes
+2025-04-11 09:09:04,686 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26851259 bytes
+2025-04-11 09:09:04,686 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26785723 bytes
+2025-04-11 09:09:04,687 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26720187 bytes
+2025-04-11 09:09:04,688 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26654651 bytes
+2025-04-11 09:09:04,689 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26589115 bytes
+2025-04-11 09:09:04,689 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26523579 bytes
+2025-04-11 09:09:04,690 - Client - INFO - Menerima chunk: 65208 bytes, sisa: 26458371 bytes
+2025-04-11 09:09:04,701 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26392835 bytes
+2025-04-11 09:09:04,701 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26327299 bytes
+2025-04-11 09:09:04,702 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26261763 bytes
+2025-04-11 09:09:04,703 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26196227 bytes
+2025-04-11 09:09:04,704 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26130691 bytes
+2025-04-11 09:09:04,704 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 26065155 bytes
+2025-04-11 09:09:04,705 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25999619 bytes
+2025-04-11 09:09:04,706 - Client - INFO - Menerima chunk: 65208 bytes, sisa: 25934411 bytes
+2025-04-11 09:09:04,715 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25868875 bytes
+2025-04-11 09:09:04,716 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25803339 bytes
+2025-04-11 09:09:04,717 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25737803 bytes
+2025-04-11 09:09:04,718 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25672267 bytes
+2025-04-11 09:09:04,719 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25606731 bytes
+2025-04-11 09:09:04,720 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25541195 bytes
+2025-04-11 09:09:04,721 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25475659 bytes
+2025-04-11 09:09:04,722 - Client - INFO - Menerima chunk: 65208 bytes, sisa: 25410451 bytes
+2025-04-11 09:09:04,732 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25344915 bytes
+2025-04-11 09:09:04,733 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25279379 bytes
+2025-04-11 09:09:04,734 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25213843 bytes
+2025-04-11 09:09:04,735 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25148307 bytes
+2025-04-11 09:09:04,736 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25082771 bytes
+2025-04-11 09:09:04,736 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 25017235 bytes
+2025-04-11 09:09:04,737 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24951699 bytes
+2025-04-11 09:09:04,738 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24886163 bytes
+2025-04-11 09:09:04,739 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24820627 bytes
+2025-04-11 09:09:04,740 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24755091 bytes
+2025-04-11 09:09:04,741 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24689555 bytes
+2025-04-11 09:09:04,742 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24624019 bytes
+2025-04-11 09:09:04,743 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24558483 bytes
+2025-04-11 09:09:04,744 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24492947 bytes
+2025-04-11 09:09:04,745 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24427411 bytes
+2025-04-11 09:09:04,746 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24361875 bytes
+2025-04-11 09:09:04,747 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24296339 bytes
+2025-04-11 09:09:04,748 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24230803 bytes
+2025-04-11 09:09:04,749 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24165267 bytes
+2025-04-11 09:09:04,750 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24099731 bytes
+2025-04-11 09:09:04,751 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 24034195 bytes
+2025-04-11 09:09:04,752 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23968659 bytes
+2025-04-11 09:09:04,753 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23903123 bytes
+2025-04-11 09:09:04,754 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23837587 bytes
+2025-04-11 09:09:04,755 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23772051 bytes
+2025-04-11 09:09:04,756 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23706515 bytes
+2025-04-11 09:09:04,758 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23640979 bytes
+2025-04-11 09:09:04,759 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23575443 bytes
+2025-04-11 09:09:04,760 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23509907 bytes
+2025-04-11 09:09:04,761 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23444371 bytes
+2025-04-11 09:09:04,762 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23378835 bytes
+2025-04-11 09:09:04,763 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23313299 bytes
+2025-04-11 09:09:04,764 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23247763 bytes
+2025-04-11 09:09:04,765 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23182227 bytes
+2025-04-11 09:09:04,767 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23116691 bytes
+2025-04-11 09:09:04,768 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 23051155 bytes
+2025-04-11 09:09:04,770 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22985619 bytes
+2025-04-11 09:09:04,771 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22920083 bytes
+2025-04-11 09:09:04,772 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22854547 bytes
+2025-04-11 09:09:04,773 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22789011 bytes
+2025-04-11 09:09:04,774 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22723475 bytes
+2025-04-11 09:09:04,775 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22657939 bytes
+2025-04-11 09:09:04,777 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22592403 bytes
+2025-04-11 09:09:04,778 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22526867 bytes
+2025-04-11 09:09:04,780 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22461331 bytes
+2025-04-11 09:09:04,781 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22395795 bytes
+2025-04-11 09:09:04,782 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22330259 bytes
+2025-04-11 09:09:04,784 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22264723 bytes
+2025-04-11 09:09:04,785 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22199187 bytes
+2025-04-11 09:09:04,786 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22133651 bytes
+2025-04-11 09:09:04,787 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22068115 bytes
+2025-04-11 09:09:04,788 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 22002579 bytes
+2025-04-11 09:09:04,789 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21937043 bytes
+2025-04-11 09:09:04,790 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21871507 bytes
+2025-04-11 09:09:04,792 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21805971 bytes
+2025-04-11 09:09:04,793 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21740435 bytes
+2025-04-11 09:09:04,794 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21674899 bytes
+2025-04-11 09:09:04,796 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21609363 bytes
+2025-04-11 09:09:04,798 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21543827 bytes
+2025-04-11 09:09:04,799 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21478291 bytes
+2025-04-11 09:09:04,801 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21412755 bytes
+2025-04-11 09:09:04,802 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21347219 bytes
+2025-04-11 09:09:04,804 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21281683 bytes
+2025-04-11 09:09:04,805 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21216147 bytes
+2025-04-11 09:09:04,806 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21150611 bytes
+2025-04-11 09:09:04,808 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21085075 bytes
+2025-04-11 09:09:04,809 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 21019539 bytes
+2025-04-11 09:09:04,811 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20954003 bytes
+2025-04-11 09:09:04,812 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20888467 bytes
+2025-04-11 09:09:04,814 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20822931 bytes
+2025-04-11 09:09:04,815 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20757395 bytes
+2025-04-11 09:09:04,816 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20691859 bytes
+2025-04-11 09:09:04,818 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20626323 bytes
+2025-04-11 09:09:04,819 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20560787 bytes
+2025-04-11 09:09:04,820 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20495251 bytes
+2025-04-11 09:09:04,822 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20429715 bytes
+2025-04-11 09:09:04,823 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20364179 bytes
+2025-04-11 09:09:04,824 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20298643 bytes
+2025-04-11 09:09:04,826 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20233107 bytes
+2025-04-11 09:09:04,827 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20167571 bytes
+2025-04-11 09:09:04,829 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20102035 bytes
+2025-04-11 09:09:04,831 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 20036499 bytes
+2025-04-11 09:09:04,833 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19970963 bytes
+2025-04-11 09:09:04,835 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19905427 bytes
+2025-04-11 09:09:04,836 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19839891 bytes
+2025-04-11 09:09:04,838 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19774355 bytes
+2025-04-11 09:09:04,839 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19708819 bytes
+2025-04-11 09:09:04,841 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19643283 bytes
+2025-04-11 09:09:04,843 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19577747 bytes
+2025-04-11 09:09:04,844 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19512211 bytes
+2025-04-11 09:09:04,846 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19446675 bytes
+2025-04-11 09:09:04,848 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19381139 bytes
+2025-04-11 09:09:04,849 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19315603 bytes
+2025-04-11 09:09:04,851 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19250067 bytes
+2025-04-11 09:09:04,853 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19184531 bytes
+2025-04-11 09:09:04,854 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19118995 bytes
+2025-04-11 09:09:04,856 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 19053459 bytes
+2025-04-11 09:09:04,858 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18987923 bytes
+2025-04-11 09:09:04,859 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18922387 bytes
+2025-04-11 09:09:04,861 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18856851 bytes
+2025-04-11 09:09:04,863 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18791315 bytes
+2025-04-11 09:09:04,865 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18725779 bytes
+2025-04-11 09:09:04,867 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18660243 bytes
+2025-04-11 09:09:04,868 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18594707 bytes
+2025-04-11 09:09:04,870 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18529171 bytes
+2025-04-11 09:09:04,872 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18463635 bytes
+2025-04-11 09:09:04,874 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18398099 bytes
+2025-04-11 09:09:04,876 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18332563 bytes
+2025-04-11 09:09:04,877 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18267027 bytes
+2025-04-11 09:09:04,879 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18201491 bytes
+2025-04-11 09:09:04,881 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18135955 bytes
+2025-04-11 09:09:04,883 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18070419 bytes
+2025-04-11 09:09:04,884 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 18004883 bytes
+2025-04-11 09:09:04,886 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17939347 bytes
+2025-04-11 09:09:04,888 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17873811 bytes
+2025-04-11 09:09:04,891 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17808275 bytes
+2025-04-11 09:09:04,893 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17742739 bytes
+2025-04-11 09:09:04,895 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17677203 bytes
+2025-04-11 09:09:04,897 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17611667 bytes
+2025-04-11 09:09:04,899 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17546131 bytes
+2025-04-11 09:09:04,901 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17480595 bytes
+2025-04-11 09:09:04,903 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17415059 bytes
+2025-04-11 09:09:04,905 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17349523 bytes
+2025-04-11 09:09:04,907 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17283987 bytes
+2025-04-11 09:09:04,909 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17218451 bytes
+2025-04-11 09:09:04,911 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17152915 bytes
+2025-04-11 09:09:04,913 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17087379 bytes
+2025-04-11 09:09:04,915 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 17021843 bytes
+2025-04-11 09:09:04,917 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16956307 bytes
+2025-04-11 09:09:04,919 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16890771 bytes
+2025-04-11 09:09:04,921 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16825235 bytes
+2025-04-11 09:09:04,923 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16759699 bytes
+2025-04-11 09:09:04,925 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16694163 bytes
+2025-04-11 09:09:04,928 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16628627 bytes
+2025-04-11 09:09:04,930 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16563091 bytes
+2025-04-11 09:09:04,932 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16497555 bytes
+2025-04-11 09:09:04,934 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16432019 bytes
+2025-04-11 09:09:04,936 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16366483 bytes
+2025-04-11 09:09:04,938 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16300947 bytes
+2025-04-11 09:09:04,940 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16235411 bytes
+2025-04-11 09:09:04,942 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16169875 bytes
+2025-04-11 09:09:04,944 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16104339 bytes
+2025-04-11 09:09:04,946 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 16038803 bytes
+2025-04-11 09:09:04,948 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15973267 bytes
+2025-04-11 09:09:04,950 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15907731 bytes
+2025-04-11 09:09:04,952 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15842195 bytes
+2025-04-11 09:09:04,955 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15776659 bytes
+2025-04-11 09:09:04,957 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15711123 bytes
+2025-04-11 09:09:04,959 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15645587 bytes
+2025-04-11 09:09:04,962 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15580051 bytes
+2025-04-11 09:09:04,964 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15514515 bytes
+2025-04-11 09:09:04,966 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15448979 bytes
+2025-04-11 09:09:04,969 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15383443 bytes
+2025-04-11 09:09:04,971 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15317907 bytes
+2025-04-11 09:09:04,973 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15252371 bytes
+2025-04-11 09:09:04,976 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15186835 bytes
+2025-04-11 09:09:04,978 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15121299 bytes
+2025-04-11 09:09:04,980 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 15055763 bytes
+2025-04-11 09:09:04,982 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14990227 bytes
+2025-04-11 09:09:04,984 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14924691 bytes
+2025-04-11 09:09:04,987 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14859155 bytes
+2025-04-11 09:09:04,989 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14793619 bytes
+2025-04-11 09:09:04,992 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14728083 bytes
+2025-04-11 09:09:04,994 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14662547 bytes
+2025-04-11 09:09:04,997 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14597011 bytes
+2025-04-11 09:09:04,999 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14531475 bytes
+2025-04-11 09:09:05,002 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14465939 bytes
+2025-04-11 09:09:05,004 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14400403 bytes
+2025-04-11 09:09:05,006 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14334867 bytes
+2025-04-11 09:09:05,008 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14269331 bytes
+2025-04-11 09:09:05,011 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14203795 bytes
+2025-04-11 09:09:05,014 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14138259 bytes
+2025-04-11 09:09:05,016 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14072723 bytes
+2025-04-11 09:09:05,019 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 14007187 bytes
+2025-04-11 09:09:05,021 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13941651 bytes
+2025-04-11 09:09:05,024 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13876115 bytes
+2025-04-11 09:09:05,026 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13810579 bytes
+2025-04-11 09:09:05,028 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13745043 bytes
+2025-04-11 09:09:05,031 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13679507 bytes
+2025-04-11 09:09:05,034 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13613971 bytes
+2025-04-11 09:09:05,037 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13548435 bytes
+2025-04-11 09:09:05,040 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13482899 bytes
+2025-04-11 09:09:05,043 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13417363 bytes
+2025-04-11 09:09:05,045 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13351827 bytes
+2025-04-11 09:09:05,048 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13286291 bytes
+2025-04-11 09:09:05,051 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13220755 bytes
+2025-04-11 09:09:05,054 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13155219 bytes
+2025-04-11 09:09:05,056 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13089683 bytes
+2025-04-11 09:09:05,059 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 13024147 bytes
+2025-04-11 09:09:05,061 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12958611 bytes
+2025-04-11 09:09:05,064 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12893075 bytes
+2025-04-11 09:09:05,067 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12827539 bytes
+2025-04-11 09:09:05,070 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12762003 bytes
+2025-04-11 09:09:05,073 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12696467 bytes
+2025-04-11 09:09:05,076 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12630931 bytes
+2025-04-11 09:09:05,079 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12565395 bytes
+2025-04-11 09:09:05,082 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12499859 bytes
+2025-04-11 09:09:05,085 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12434323 bytes
+2025-04-11 09:09:05,087 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12368787 bytes
+2025-04-11 09:09:05,090 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12303251 bytes
+2025-04-11 09:09:05,093 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12237715 bytes
+2025-04-11 09:09:05,096 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12172179 bytes
+2025-04-11 09:09:05,099 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12106643 bytes
+2025-04-11 09:09:05,102 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 12041107 bytes
+2025-04-11 09:09:05,105 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11975571 bytes
+2025-04-11 09:09:05,108 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11910035 bytes
+2025-04-11 09:09:05,111 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11844499 bytes
+2025-04-11 09:09:05,113 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11778963 bytes
+2025-04-11 09:09:05,116 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11713427 bytes
+2025-04-11 09:09:05,119 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11647891 bytes
+2025-04-11 09:09:05,121 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11582355 bytes
+2025-04-11 09:09:05,125 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11516819 bytes
+2025-04-11 09:09:05,128 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11451283 bytes
+2025-04-11 09:09:05,131 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11385747 bytes
+2025-04-11 09:09:05,134 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11320211 bytes
+2025-04-11 09:09:05,137 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11254675 bytes
+2025-04-11 09:09:05,141 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11189139 bytes
+2025-04-11 09:09:05,144 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11123603 bytes
+2025-04-11 09:09:05,147 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 11058067 bytes
+2025-04-11 09:09:05,150 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10992531 bytes
+2025-04-11 09:09:05,153 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10926995 bytes
+2025-04-11 09:09:05,156 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10861459 bytes
+2025-04-11 09:09:05,159 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10795923 bytes
+2025-04-11 09:09:05,162 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10730387 bytes
+2025-04-11 09:09:05,164 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10664851 bytes
+2025-04-11 09:09:05,167 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10599315 bytes
+2025-04-11 09:09:05,170 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10533779 bytes
+2025-04-11 09:09:05,173 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10468243 bytes
+2025-04-11 09:09:05,176 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10402707 bytes
+2025-04-11 09:09:05,179 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10337171 bytes
+2025-04-11 09:09:05,183 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10271635 bytes
+2025-04-11 09:09:05,186 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10206099 bytes
+2025-04-11 09:09:05,189 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10140563 bytes
+2025-04-11 09:09:05,192 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10075027 bytes
+2025-04-11 09:09:05,195 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 10009491 bytes
+2025-04-11 09:09:05,198 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9943955 bytes
+2025-04-11 09:09:05,201 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9878419 bytes
+2025-04-11 09:09:05,204 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9812883 bytes
+2025-04-11 09:09:05,208 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9747347 bytes
+2025-04-11 09:09:05,211 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9681811 bytes
+2025-04-11 09:09:05,215 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9616275 bytes
+2025-04-11 09:09:05,218 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9550739 bytes
+2025-04-11 09:09:05,221 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9485203 bytes
+2025-04-11 09:09:05,224 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9419667 bytes
+2025-04-11 09:09:05,228 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9354131 bytes
+2025-04-11 09:09:05,231 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9288595 bytes
+2025-04-11 09:09:05,236 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9223059 bytes
+2025-04-11 09:09:05,240 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9157523 bytes
+2025-04-11 09:09:05,243 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9091987 bytes
+2025-04-11 09:09:05,246 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 9026451 bytes
+2025-04-11 09:09:05,249 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8960915 bytes
+2025-04-11 09:09:05,252 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8895379 bytes
+2025-04-11 09:09:05,255 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8829843 bytes
+2025-04-11 09:09:05,258 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8764307 bytes
+2025-04-11 09:09:05,261 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8698771 bytes
+2025-04-11 09:09:05,265 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8633235 bytes
+2025-04-11 09:09:05,268 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8567699 bytes
+2025-04-11 09:09:05,271 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8502163 bytes
+2025-04-11 09:09:05,274 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8436627 bytes
+2025-04-11 09:09:05,277 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8371091 bytes
+2025-04-11 09:09:05,280 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8305555 bytes
+2025-04-11 09:09:05,283 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8240019 bytes
+2025-04-11 09:09:05,289 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8174483 bytes
+2025-04-11 09:09:05,293 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8108947 bytes
+2025-04-11 09:09:05,298 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 8043411 bytes
+2025-04-11 09:09:05,302 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7977875 bytes
+2025-04-11 09:09:05,306 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7912339 bytes
+2025-04-11 09:09:05,311 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7846803 bytes
+2025-04-11 09:09:05,316 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7781267 bytes
+2025-04-11 09:09:05,320 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7715731 bytes
+2025-04-11 09:09:05,325 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7650195 bytes
+2025-04-11 09:09:05,329 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7584659 bytes
+2025-04-11 09:09:05,333 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7519123 bytes
+2025-04-11 09:09:05,337 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7453587 bytes
+2025-04-11 09:09:05,342 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7388051 bytes
+2025-04-11 09:09:05,346 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7322515 bytes
+2025-04-11 09:09:05,350 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7256979 bytes
+2025-04-11 09:09:05,354 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7191443 bytes
+2025-04-11 09:09:05,358 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7125907 bytes
+2025-04-11 09:09:05,362 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 7060371 bytes
+2025-04-11 09:09:05,367 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6994835 bytes
+2025-04-11 09:09:05,372 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6929299 bytes
+2025-04-11 09:09:05,377 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6863763 bytes
+2025-04-11 09:09:05,382 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6798227 bytes
+2025-04-11 09:09:05,386 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6732691 bytes
+2025-04-11 09:09:05,390 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6667155 bytes
+2025-04-11 09:09:05,394 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6601619 bytes
+2025-04-11 09:09:05,397 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6536083 bytes
+2025-04-11 09:09:05,401 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6470547 bytes
+2025-04-11 09:09:05,404 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6405011 bytes
+2025-04-11 09:09:05,407 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6339475 bytes
+2025-04-11 09:09:05,411 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6273939 bytes
+2025-04-11 09:09:05,414 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6208403 bytes
+2025-04-11 09:09:05,417 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6142867 bytes
+2025-04-11 09:09:05,421 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6077331 bytes
+2025-04-11 09:09:05,425 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 6011795 bytes
+2025-04-11 09:09:05,428 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5946259 bytes
+2025-04-11 09:09:05,431 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5880723 bytes
+2025-04-11 09:09:05,435 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5815187 bytes
+2025-04-11 09:09:05,438 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5749651 bytes
+2025-04-11 09:09:05,441 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5684115 bytes
+2025-04-11 09:09:05,445 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5618579 bytes
+2025-04-11 09:09:05,448 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5553043 bytes
+2025-04-11 09:09:05,452 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5487507 bytes
+2025-04-11 09:09:05,456 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5421971 bytes
+2025-04-11 09:09:05,459 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5356435 bytes
+2025-04-11 09:09:05,463 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5290899 bytes
+2025-04-11 09:09:05,467 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5225363 bytes
+2025-04-11 09:09:05,470 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5159827 bytes
+2025-04-11 09:09:05,474 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5094291 bytes
+2025-04-11 09:09:05,477 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 5028755 bytes
+2025-04-11 09:09:05,481 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4963219 bytes
+2025-04-11 09:09:05,485 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4897683 bytes
+2025-04-11 09:09:05,489 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4832147 bytes
+2025-04-11 09:09:05,492 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4766611 bytes
+2025-04-11 09:09:05,496 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4701075 bytes
+2025-04-11 09:09:05,500 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4635539 bytes
+2025-04-11 09:09:05,503 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4570003 bytes
+2025-04-11 09:09:05,507 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4504467 bytes
+2025-04-11 09:09:05,511 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4438931 bytes
+2025-04-11 09:09:05,515 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4373395 bytes
+2025-04-11 09:09:05,519 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4307859 bytes
+2025-04-11 09:09:05,523 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4242323 bytes
+2025-04-11 09:09:05,526 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4176787 bytes
+2025-04-11 09:09:05,530 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4111251 bytes
+2025-04-11 09:09:05,534 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 4045715 bytes
+2025-04-11 09:09:05,538 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3980179 bytes
+2025-04-11 09:09:05,542 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3914643 bytes
+2025-04-11 09:09:05,546 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3849107 bytes
+2025-04-11 09:09:05,549 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3783571 bytes
+2025-04-11 09:09:05,553 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3718035 bytes
+2025-04-11 09:09:05,557 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3652499 bytes
+2025-04-11 09:09:05,561 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3586963 bytes
+2025-04-11 09:09:05,565 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3521427 bytes
+2025-04-11 09:09:05,569 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3455891 bytes
+2025-04-11 09:09:05,573 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3390355 bytes
+2025-04-11 09:09:05,576 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3324819 bytes
+2025-04-11 09:09:05,580 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3259283 bytes
+2025-04-11 09:09:05,584 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3193747 bytes
+2025-04-11 09:09:05,588 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3128211 bytes
+2025-04-11 09:09:05,592 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 3062675 bytes
+2025-04-11 09:09:05,596 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2997139 bytes
+2025-04-11 09:09:05,600 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2931603 bytes
+2025-04-11 09:09:05,604 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2866067 bytes
+2025-04-11 09:09:05,608 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2800531 bytes
+2025-04-11 09:09:05,612 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2734995 bytes
+2025-04-11 09:09:05,616 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2669459 bytes
+2025-04-11 09:09:05,619 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2603923 bytes
+2025-04-11 09:09:05,624 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2538387 bytes
+2025-04-11 09:09:05,628 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2472851 bytes
+2025-04-11 09:09:05,632 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2407315 bytes
+2025-04-11 09:09:05,636 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2341779 bytes
+2025-04-11 09:09:05,640 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2276243 bytes
+2025-04-11 09:09:05,644 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2210707 bytes
+2025-04-11 09:09:05,648 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2145171 bytes
+2025-04-11 09:09:05,651 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2079635 bytes
+2025-04-11 09:09:05,655 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 2014099 bytes
+2025-04-11 09:09:05,660 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1948563 bytes
+2025-04-11 09:09:05,664 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1883027 bytes
+2025-04-11 09:09:05,669 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1817491 bytes
+2025-04-11 09:09:05,673 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1751955 bytes
+2025-04-11 09:09:05,676 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1686419 bytes
+2025-04-11 09:09:05,680 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1620883 bytes
+2025-04-11 09:09:05,684 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1555347 bytes
+2025-04-11 09:09:05,688 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1489811 bytes
+2025-04-11 09:09:05,692 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1424275 bytes
+2025-04-11 09:09:05,696 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1358739 bytes
+2025-04-11 09:09:05,700 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1293203 bytes
+2025-04-11 09:09:05,704 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1227667 bytes
+2025-04-11 09:09:05,708 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1162131 bytes
+2025-04-11 09:09:05,712 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1096595 bytes
+2025-04-11 09:09:05,716 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 1031059 bytes
+2025-04-11 09:09:05,720 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 965523 bytes
+2025-04-11 09:09:05,725 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 899987 bytes
+2025-04-11 09:09:05,729 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 834451 bytes
+2025-04-11 09:09:05,733 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 768915 bytes
+2025-04-11 09:09:05,737 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 703379 bytes
+2025-04-11 09:09:05,741 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 637843 bytes
+2025-04-11 09:09:05,746 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 572307 bytes
+2025-04-11 09:09:05,751 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 506771 bytes
+2025-04-11 09:09:05,755 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 441235 bytes
+2025-04-11 09:09:05,759 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 375699 bytes
+2025-04-11 09:09:05,765 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 310163 bytes
+2025-04-11 09:09:05,769 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 244627 bytes
+2025-04-11 09:09:05,773 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 179091 bytes
+2025-04-11 09:09:05,777 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 113555 bytes
+2025-04-11 09:09:05,782 - Client - INFO - Menerima chunk: 65536 bytes, sisa: 48019 bytes
+2025-04-11 09:09:05,785 - Client - INFO - Menerima chunk: 48019 bytes, sisa: 0 bytes
+2025-04-11 09:09:05,785 - Client - INFO - Selesai menerima 29602131 bytes data
+2025-04-11 09:09:05,956 - Client - INFO - Model global yang diperbarui diterima
+2025-04-11 09:09:06,483 - Client - INFO - Akurasi Model: 0.9990
+2025-04-11 09:09:06,483 - Client - INFO - Classification Report: {'0': {'precision': 0.998992950654582, 'recall': 1.0, 'f1-score': 0.9994962216624685, 'support': 992.0}, '4': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 1.0}, 'accuracy': 0.998992950654582, 'macro avg': {'precision': 0.499496475327291, 'recall': 0.5, 'f1-score': 0.49974811083123427, 'support': 993.0}, 'weighted avg': {'precision': 0.9979869154575483, 'recall': 0.998992950654582, 'f1-score': 0.9984896796466957, 'support': 993.0}}
+2025-04-11 09:09:06,483 - Client - INFO - Confusion Matrix:
+[[992   0]
+ [  1   0]]
+2025-04-11 09:09:06,484 - Client - INFO - Akurasi model global setelah agregasi: 0.9990
+2025-04-11 09:09:06,484 - Client - INFO - Peningkatan akurasi: 0.9980 (99.80%)
+2025-04-11 09:09:06,485 - Client - INFO - Klien 2 selesai.

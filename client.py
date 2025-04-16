@@ -33,7 +33,6 @@ class EcgResNet34(nn.Module):
         self.avgpool = nn.AdaptiveAvgPool1d(1)
         self.dropout = nn.Dropout(0.5)
         self.fc = nn.Linear(512, 5)
-        self.weight_layer = nn.Linear(512, 512, bias=False)
 
     def _make_layer(self, in_channels, out_channels, blocks, stride=1):
         layers = [ResidualBlock(in_channels, out_channels, stride)]
