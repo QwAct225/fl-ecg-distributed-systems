@@ -1,2 +1,5 @@
 venv
 temp_model.pt
+
+global_model.pt
+global_model.pt.enc
