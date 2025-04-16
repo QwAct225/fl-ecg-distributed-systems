@@ -1,4 +1,3 @@
-# client.py
 import socket
 import torch
 import torch.nn as nn
@@ -14,14 +13,10 @@ import os
 import wfdb
 import sys
 
-# Konfigurasi Klien
-HOST = '127.0.0.1'  # Loopback address (harus sama dengan server)
-PORT = 65432  # Port server (harus sama dengan server)
-KEY = b'Sixteen byte key'  # Kunci Enkripsi (harus sama dengan server!)
+HOST = '127.0.0.1'
+PORT = 65432
+KEY = b'Sixteen byte key' 
 
-
-# Definisi Model (Harus sama dengan server!)
-# Di global_server.py dan client.py
 class EcgResNet34(nn.Module):
     def __init__(self, input_channels=2):
         super().__init__()
@@ -30,7 +25,6 @@ class EcgResNet34(nn.Module):
         self.relu = nn.ReLU()
         self.maxpool = nn.MaxPool1d(3, stride=2, padding=1)
         
-        # Blok residual dengan dropout
         self.layer1 = self._make_layer(64, 64, 3)
         self.layer2 = self._make_layer(64, 128, 4, stride=2)
         self.layer3 = self._make_layer(128, 256, 6, stride=2)
@@ -39,6 +33,7 @@ class EcgResNet34(nn.Module):
         self.avgpool = nn.AdaptiveAvgPool1d(1)
         self.dropout = nn.Dropout(0.5)
         self.fc = nn.Linear(512, 5)
+        self.weight_layer = nn.Linear(512, 512, bias=False)
 
     def _make_layer(self, in_channels, out_channels, blocks, stride=1):
         layers = [ResidualBlock(in_channels, out_channels, stride)]
@@ -90,7 +85,6 @@ class ResidualBlock(nn.Module):
         x = self.relu(x)
         return x
         
-# Conversi semua file WFDB ke format MATLAB (.mat)
 def convert_all_wfdb_to_matlab():
     records = range(100, 106)
     for record_id in records:
@@ -108,7 +102,6 @@ def convert_all_wfdb_to_matlab():
                 if sym in label_map and s < len(labels):
                     labels[s] = label_map[sym]
             
-            # Validasi data
             assert len(np.unique(labels)) > 1, f"Record {record_id} hanya memiliki 1 kelas!"
             assert not np.all(signal == 0), f"Signal {record_id} korup!"
             
@@ -119,7 +112,6 @@ def convert_all_wfdb_to_matlab():
             print(f"Error converting {record_id}: {str(e)}")
             sys.exit(1)
 
-# Fungsi untuk memuat dan memproses data MIT-BIH
 def load_mitbih_data(client_id, resample_size=128):
     if client_id == 1:
         records = [100, 101, 102]
@@ -135,49 +127,38 @@ def load_mitbih_data(client_id, resample_size=128):
         signal = data['val'][0]
         labels = data['label'][0].astype(int)
         
-        # Validasi dan preprocessing
         signal = (signal - np.mean(signal)) / np.std(signal)
         peaks, _ = find_peaks(signal, distance=50, prominence=0.5)
         
-        # Ekstraksi fitur dengan augmentasi
         for i in range(1, len(peaks)):
-            # Augmentasi dengan random scaling
             scale_factor = np.random.uniform(0.8, 1.2)
             scaled_signal = signal * scale_factor
             
-            # Ekstraksi window dengan jitter
             start = max(0, peaks[i] - resample_size//2 + np.random.randint(-5,5))
             end = start + resample_size
             window = scaled_signal[start:end]
             
-            # Padding adaptif
             if len(window) < resample_size:
                 window = np.pad(window, (0, resample_size - len(window)))
             else:
                 window = window[:resample_size]
             
-            # Ekstraksi RRI dengan noise
             rri = (peaks[i] - peaks[i-1]) * (1000/360) + np.random.normal(0,10)
             rri_channel = np.full(resample_size, rri/1000)
             
             all_features.append(np.stack([window, rri_channel]))
             all_labels.append(labels[peaks[i]])
     
-    # Shuffle data
     indices = np.random.permutation(len(all_features))
     return torch.tensor(np.array(all_features)[indices], dtype=torch.float32), \
            torch.tensor(np.array(all_labels)[indices], dtype=torch.long)
 
-
-# Fungsi untuk Mengenkripsi Data
 def encrypt(data, key):
     cipher = AES.new(key, AES.MODE_EAX)
     nonce = cipher.nonce
     ciphertext, tag = cipher.encrypt_and_digest(data)
     return nonce + ciphertext + tag
 
-
-# Fungsi untuk Mendekripsi Data
 def decrypt(encrypted_data, key):
     nonce = encrypted_data[:16]
     tag = encrypted_data[-16:]
@@ -185,8 +166,48 @@ def decrypt(encrypted_data, key):
     cipher = AES.new(key, AES.MODE_EAX, nonce=nonce)
     return cipher.decrypt_and_verify(ciphertext, tag)
 
+def decrypt_file(input_file, output_file, key):
+    """Mendekripsi file yang telah dienkripsi menggunakan AES."""
+    try:
+        with open(input_file, 'rb') as f:
+            encrypted_data = f.read()
+        
+        if len(encrypted_data) < 32:
+            raise ValueError("File terlalu kecil untuk menjadi file terenkripsi yang valid")
+            
+        nonce = encrypted_data[:16]
+        tag = encrypted_data[-16:]
+        ciphertext = encrypted_data[16:-16]
+        
+        cipher = AES.new(key, AES.MODE_EAX, nonce=nonce)
+        decrypted_data = cipher.decrypt_and_verify(ciphertext, tag)
+        
+        with open(output_file, 'wb') as f:
+            f.write(decrypted_data)
+        print(f"File berhasil didekripsi: {output_file}")
+        return True
+    except Exception as e:
+        print(f"Error dekripsi file: {e}")
+        return False
 
-# Fungsi untuk melatih model lokal
+def encrypt_file(input_file, output_file, key):
+    """Mengenkripsi file menggunakan AES."""
+    try:
+        with open(input_file, 'rb') as f:
+            data = f.read()
+        
+        cipher = AES.new(key, AES.MODE_EAX)
+        nonce = cipher.nonce
+        ciphertext, tag = cipher.encrypt_and_digest(data)
+        
+        with open(output_file, 'wb') as f:
+            f.write(nonce + ciphertext + tag)
+        print(f"File berhasil dienkripsi: {output_file}")
+        return True
+    except Exception as e:
+        print(f"Error enkripsi file: {e}")
+        return False
+
 def train_local_model(model, train_loader, epochs=10, lr=0.001):
     model = model.float()
     criterion = nn.CrossEntropyLoss()
@@ -206,7 +227,6 @@ def train_local_model(model, train_loader, epochs=10, lr=0.001):
         for i, (inputs, labels) in enumerate(train_loader):
             optimizer.zero_grad()
             
-            # Forward pass dengan mixup augmentation
             lam = np.random.beta(0.2, 0.2) 
             index = torch.randperm(inputs.size(0))
             mixed_inputs = lam * inputs + (1 - lam) * inputs[index]
@@ -219,7 +239,6 @@ def train_local_model(model, train_loader, epochs=10, lr=0.001):
             optimizer.step()
             scheduler.step()
             
-            # Tracking metrics
             total_loss += loss.item()
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
@@ -241,7 +260,6 @@ def train_local_model(model, train_loader, epochs=10, lr=0.001):
     
     return model
 
-# Fungsi untuk menambahkan noise (Differential Privacy sederhana)
 def add_noise(model, sensitivity, epsilon):
     """Menambahkan noise ke parameter model untuk differential privacy."""
     with torch.no_grad():
@@ -261,42 +279,36 @@ if __name__ == '__main__':
     client_id = int(sys.argv[1])
     print(f"Klien {client_id} dimulai...")
 
-    # Muat Data Lokal
     features, labels = load_mitbih_data(client_id)
 
-    # Ubah data menjadi format yang sesuai untuk PyTorch
-    X_train = features.clone().detach()  # Gunakan clone().detach()
+    X_train = features.clone().detach()
     y_train = labels.clone().detach()
 
-    # Buat DataLoader
     train_dataset = torch.utils.data.TensorDataset(X_train, y_train)
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=32, shuffle=True)
 
-    # Inisialisasi Model Lokal
     local_model = EcgResNet34()
 
-    # Koneksi ke Server
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         try:
             s.settimeout(120)
             s.connect((HOST, PORT))
             print(f"Terhubung ke server di {HOST}:{PORT}")
 
-            # Latih Model Lokal
             trained_model = train_local_model(local_model, train_loader)
 
-            # Tambahkan Noise (Differential Privacy - Sederhana!)
-            sensitivity = 0.1  # Sesuaikan
-            epsilon = 1.0  # Sesuaikan
+            sensitivity = 0.1
+            epsilon = 1.0
             trained_model = add_noise(trained_model, sensitivity, epsilon)
 
-            # Kirim Model ke Server
-            torch.save(trained_model.state_dict(), 'temp_model.pt')
-            with open('temp_model.pt', 'rb') as f:
+            local_model_path = f'local_model_client{client_id}.pt'
+            torch.save(trained_model.state_dict(), local_model_path)
+            encrypt_file(local_model_path, f'{local_model_path}.enc', KEY)
+
+            with open(local_model_path, 'rb') as f:
                 model_bytes = f.read()
             encrypted_data = encrypt(model_bytes, KEY)
 
-            # Kirim data terenkripsi ke server
             s.sendall(encrypted_data)
 
             encrypted_response = b''
@@ -306,12 +318,15 @@ if __name__ == '__main__':
                     break
                 encrypted_response += chunk
 
-            # Deskripsi Respon
+            global_model_path = f'global_model.pt'
             decrypted_data = decrypt(encrypted_response, KEY)
-            with open('global_model.pt', 'wb') as f:
+            with open(global_model_path, 'wb') as f:
                 f.write(decrypted_data)
+                
+            encrypt_file(global_model_path, f'{global_model_path}.enc', KEY)
+
             updated_global_model = EcgResNet34()
-            updated_global_model.load_state_dict(torch.load('global_model.pt'))
+            updated_global_model.load_state_dict(torch.load(global_model_path))
 
         except Exception as e:
             print(f"Error: {e}")

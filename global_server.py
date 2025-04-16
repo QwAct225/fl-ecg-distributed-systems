@@ -10,27 +10,26 @@ import Crypto
 from Crypto.Cipher import AES
 import os
 
-# Konfigurasi Server
 HOST = '127.0.0.1'
 PORT = 65432
 KEY = b'Sixteen byte key'
 
 class EcgResNet34(nn.Module):
-    def __init__(self, input_channels=2):  # Perubahan: default 2 channel (ECG + RRI)
+    def __init__(self, input_channels=2):
         super(EcgResNet34, self).__init__()
         self.conv1 = nn.Conv1d(input_channels, 64, kernel_size=7, stride=2, padding=3)
         self.bn1 = nn.BatchNorm1d(64)
         self.relu = nn.ReLU()
         self.maxpool = nn.MaxPool1d(kernel_size=3, stride=2, padding=1)
 
-        # Blok Residual
         self.layer1 = self._make_layer(64, 64, 3)
         self.layer2 = self._make_layer(64, 128, 4, stride=2)
         self.layer3 = self._make_layer(128, 256, 6, stride=2)
         self.layer4 = self._make_layer(256, 512, 3, stride=2)
 
         self.avgpool = nn.AdaptiveAvgPool1d(1)
-        self.fc = nn.Linear(512, 5)  # 5 kelas
+        self.dropout = nn.Dropout(0.5)
+        self.fc = nn.Linear(512, 5)
 
     def _make_layer(self, in_channels, out_channels, blocks, stride=1):
         layers = []
@@ -84,9 +83,6 @@ class ResidualBlock(nn.Module):
         x = self.relu(x)
         return x
 
-    # Fungsi untuk Mengenkripsi Data
-
-
 def encrypt(data, key):
     cipher = AES.new(key, AES.MODE_EAX)
     nonce = cipher.nonce
@@ -94,7 +90,6 @@ def encrypt(data, key):
     return nonce + ciphertext + tag
 
 
-# Fungsi untuk Mendekripsi Data
 def decrypt(encrypted_data, key):
     nonce = encrypted_data[:16]
     tag = encrypted_data[-16:]
@@ -102,8 +97,48 @@ def decrypt(encrypted_data, key):
     cipher = AES.new(key, AES.MODE_EAX, nonce=nonce)
     return cipher.decrypt_and_verify(ciphertext, tag)
 
+def decrypt_file(input_file, output_file, key):
+    """Mendekripsi file yang telah dienkripsi menggunakan AES."""
+    try:
+        with open(input_file, 'rb') as f:
+            encrypted_data = f.read()
+        
+        if len(encrypted_data) < 32:
+            raise ValueError("File terlalu kecil untuk menjadi file terenkripsi yang valid")
+            
+        nonce = encrypted_data[:16]
+        tag = encrypted_data[-16:]
+        ciphertext = encrypted_data[16:-16]
+        
+        cipher = AES.new(key, AES.MODE_EAX, nonce=nonce)
+        decrypted_data = cipher.decrypt_and_verify(ciphertext, tag)
+        
+        with open(output_file, 'wb') as f:
+            f.write(decrypted_data)
+        print(f"File berhasil didekripsi: {output_file}")
+        return True
+    except Exception as e:
+        print(f"Error dekripsi file: {e}")
+        return False
 
-# Fungsi untuk menggabungkan pembaruan model (Federated Averaging)
+def encrypt_file(input_file, output_file, key):
+    """Mengenkripsi file menggunakan AES."""
+    try:
+        with open(input_file, 'rb') as f:
+            data = f.read()
+        
+        cipher = AES.new(key, AES.MODE_EAX)
+        nonce = cipher.nonce
+        ciphertext, tag = cipher.encrypt_and_digest(data)
+        
+        with open(output_file, 'wb') as f:
+            f.write(nonce + ciphertext + tag)
+        print(f"File berhasil dienkripsi: {output_file}")
+        return True
+    except Exception as e:
+        print(f"Error enkripsi file: {e}")
+        return False
+
 def federated_averaging(global_model, client_models, client_weights):
     with torch.no_grad():
         global_params = OrderedDict(global_model.named_parameters())
@@ -117,13 +152,10 @@ def federated_averaging(global_model, client_models, client_weights):
 
     return global_model
 
-
-# Fungsi untuk menangani setiap koneksi klien
 def handle_client(conn, addr, global_model, client_models, client_weights, client_index):
     print(f"📡 Koneksi dari {addr}")
 
     try:
-        # Menerima model dari klien
         encrypted_data = b''
         while True:
             chunk = conn.recv(65536)
@@ -143,15 +175,19 @@ def handle_client(conn, addr, global_model, client_models, client_weights, clien
 
         client_models[client_index] = client_model
 
-        # Lakukan Federated Averaging jika kita sudah menerima dari semua klien
         if all(model is not None for model in client_models):
             print("\n🔀 Memulai Federated Averaging")
             start_agg = time.time()
             
             federated_averaging(global_model, client_models, client_weights)
             
-            torch.save(global_model.state_dict(), 'global_model.pt')
-            with open('global_model.pt', 'rb') as f:
+            global_model_path = 'global_model.pt'
+            torch.save(global_model.state_dict(), global_model_path)
+            
+            encrypted_model_path = 'global_model.pt.enc'
+            encrypt_file(global_model_path, encrypted_model_path, KEY)
+            
+            with open(global_model_path, 'rb') as f:
                 global_bytes = f.read()
             
             print(f"⏱ Waktu Agregasi: {time.time()-start_agg:.2f} detik")
@@ -167,15 +203,12 @@ def handle_client(conn, addr, global_model, client_models, client_weights, clien
 
 
 if __name__ == '__main__':
-    # Inisialisasi Model Global
-    global_model = EcgResNet34(input_channels=2)  # Perubahan: inisialisasi dengan input 2 channel
+    global_model = EcgResNet34(input_channels=2)
 
-    # Inisialisasi Model Klien (sebagai placeholder)
     num_clients = 2
-    client_models = [None] * num_clients  # None berarti belum menerima model dari klien
+    client_models = [None] * num_clients
     client_weights = [0.5, 0.5]
 
-    # Buat socket TCP
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.settimeout(120)
         s.bind((HOST, PORT))
