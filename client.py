@@ -1,3 +1,4 @@
+# client.py
 import socket
 import torch
 import torch.nn as nn
@@ -13,7 +14,7 @@ import os
 import wfdb
 import sys
 
-HOST = '127.0.0.1'
+HOST = '10.34.100.116'
 PORT = 65432
 KEY = b'Sixteen byte key' 
 
