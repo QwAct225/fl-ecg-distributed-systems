@@ -1,6 +1,6 @@
-# global_server.py
 import socket
 import threading
+import time
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -11,15 +11,10 @@ from Crypto.Cipher import AES
 import os
 
 # Konfigurasi Server
-HOST = '127.0.0.1'  # Loopback address
-PORT = 65432  # Port untuk mendengarkan
+HOST = '127.0.0.1'
+PORT = 65432
+KEY = b'Sixteen byte key'
 
-# Kunci Enkripsi (Harus sama dengan klien!)
-KEY = b'Sixteen byte key'  # Ganti dengan kunci yang lebih kuat
-
-
-# Definisi Model Global
-# Di global_server.py dan client.py
 class EcgResNet34(nn.Module):
     def __init__(self, input_channels=2):  # Perubahan: default 2 channel (ECG + RRI)
         super(EcgResNet34, self).__init__()
@@ -45,6 +40,7 @@ class EcgResNet34(nn.Module):
         return nn.Sequential(*layers)
 
     def forward(self, x):
+        x = x.float()
         x = self.conv1(x)
         x = self.bn1(x)
         x = self.relu(x)
@@ -124,7 +120,7 @@ def federated_averaging(global_model, client_models, client_weights):
 
 # Fungsi untuk menangani setiap koneksi klien
 def handle_client(conn, addr, global_model, client_models, client_weights, client_index):
-    print(f"Terhubung oleh {addr}")
+    print(f"📡 Koneksi dari {addr}")
 
     try:
         # Menerima model dari klien
@@ -142,20 +138,25 @@ def handle_client(conn, addr, global_model, client_models, client_weights, clien
         with open('temp_model.pt', 'wb') as f:
             f.write(decrypted_data)
 
-        client_model = EcgResNet34(input_channels=2)  # Perubahan: pastikan konsisten dengan input dua channel
+        client_model = EcgResNet34(input_channels=2)
         client_model.load_state_dict(torch.load('temp_model.pt', map_location='cpu'))
 
         client_models[client_index] = client_model
 
         # Lakukan Federated Averaging jika kita sudah menerima dari semua klien
         if all(model is not None for model in client_models):
-            # Lakukan agregasi
+            print("\n🔀 Memulai Federated Averaging")
+            start_agg = time.time()
+            
             federated_averaging(global_model, client_models, client_weights)
-
-            # Kirim model global kembali ke klien
+            
             torch.save(global_model.state_dict(), 'global_model.pt')
             with open('global_model.pt', 'rb') as f:
                 global_bytes = f.read()
+            
+            print(f"⏱ Waktu Agregasi: {time.time()-start_agg:.2f} detik")
+            print(f"📤 Mengirim model global ke {addr}")
+            
             encrypted_response = encrypt(global_bytes, KEY)
             conn.sendall(encrypted_response)
 
@@ -176,7 +177,7 @@ if __name__ == '__main__':
 
     # Buat socket TCP
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.settimeout(60)
+        s.settimeout(120)
         s.bind((HOST, PORT))
         s.listen()
         print(f"Server mendengarkan di {HOST}:{PORT}")
