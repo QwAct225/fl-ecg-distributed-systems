@@ -424,7 +424,7 @@ def run_federated_client(client_id, cycle):
             # Kirim model terlatih
             with open(local_model_path, 'rb') as f:
                 model_bytes = f.read()
-            encrypted_data = encrypt_data(model_bytes, KEY)
+            encrypted_data = encrypt(model_bytes, KEY)
 
             # Send data length first
             s.sendall(len(encrypted_data).to_bytes(4, byteorder='big'))
@@ -434,7 +434,7 @@ def run_federated_client(client_id, cycle):
             print(f"📤 Model lokal berhasil dikirim ke server")
 
             # Kirim metrik validasi
-            encrypted_metrics = encrypt_data(json.dumps(validation_metrics).encode('utf-8'), KEY)
+            encrypted_metrics = encrypt(json.dumps(validation_metrics).encode('utf-8'), KEY)
 
             # Send metrics length first
             s.sendall(len(encrypted_metrics).to_bytes(4, byteorder='big'))
@@ -452,7 +452,7 @@ def run_federated_client(client_id, cycle):
                 raise ConnectionError("Koneksi ditutup oleh server sebelum menerima panjang data")
 
             data_length = int.from_bytes(length_data, byteorder='big')
-            print(f"Akan menerima {data_length} bytes dari server")
+            print(f"Akan menerima {data_length/1048576:.2f} MB dari server")
 
             # Then receive actual data
             encrypted_response = b''
@@ -464,10 +464,10 @@ def run_federated_client(client_id, cycle):
                     break
                 encrypted_response += chunk
                 received_length += len(chunk)
-                print(f"Diterima {received_length}/{data_length} bytes")
+                print(f"Received {received_length/1048576:.2f}/{data_length/1048576:.2f} MB")
 
             if received_length < data_length:
-                print(f"⚠️ Penerimaan data tidak lengkap: {received_length}/{data_length} bytes")
+                print(f"⚠️ Penerimaan data tidak lengkap: {received_length/1048576:.2f}/{data_length/1048576:.2f} MB")
 
             if encrypted_response:
                 global_model_path = f'global_model_cycle_{cycle + 1}.pt'

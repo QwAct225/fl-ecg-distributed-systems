@@ -235,6 +235,7 @@ def evaluate_model(model, test_loader):
 
 
 def handle_client(conn, addr, global_model, client_models, client_data, client_index, cycle, metrics):
+    global_model_path = f'global_model_cycle_{cycle + 1}.pt'
     print(f"📡 Koneksi dari {addr} (Klien {client_index + 1}, Siklus {cycle + 1})")
 
     try:
@@ -246,7 +247,7 @@ def handle_client(conn, addr, global_model, client_models, client_data, client_i
         length_data = conn.recv(4)
         if length_data:
             data_length = int.from_bytes(length_data, byteorder='big')
-            print(f"Expected data length: {data_length} bytes")
+            print(f"Expected data length: {data_length/1048576:.2f} MB")
 
         # Now receive the actual data
         received_length = 0
@@ -256,10 +257,10 @@ def handle_client(conn, addr, global_model, client_models, client_data, client_i
                 break
             encrypted_data += chunk
             received_length += len(chunk)
-            print(f"Received {received_length}/{data_length} bytes")
+            print(f"Received {received_length/1048576:.2f}/{data_length/1048576:.2f} MB")
 
         if not encrypted_data or received_length < data_length:
-            raise ValueError(f"Incomplete data received: {received_length}/{data_length} bytes")
+            raise ValueError(f"Incomplete data received: {received_length/1048576:.2f}/{data_length/1048576:.2f} MB")
 
         # Decrypt client model
         decrypted_data = decrypt(encrypted_data, KEY)
