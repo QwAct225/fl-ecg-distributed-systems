@@ -3,3 +3,17 @@ temp_model.pt
 
 global_model.pt
 global_model.pt.enc
+client.log
+server.log
+
+client_model_1_cycle_2.pt
+client_model_2_cycle_2.pt
+federated_metrics_cycle_2.json
+federated_metrics_final.json
+global_model_cycle_2.pt
+global_model_initial.pt
+
+local_model_client1_cycle1.pt
+local_model_client1_cycle1.pt.enc
+local_model_client2_cycle1.pt
+local_model_client2_cycle1.pt.enc
