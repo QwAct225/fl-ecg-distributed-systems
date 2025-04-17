@@ -96,8 +96,8 @@ def encrypt(data, key):
     cipher = AES.new(key, AES.MODE_EAX)
     nonce = cipher.nonce
     ciphertext, tag = cipher.encrypt_and_digest(data)
-    return nonce + ciphertext + tag
-
+    encrypted_data = nonce + tag + ciphertext
+    return encrypted_data
 
 def decrypt(encrypted_data, key):
     nonce = encrypted_data[:16]

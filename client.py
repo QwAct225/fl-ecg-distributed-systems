@@ -172,13 +172,14 @@ def encrypt(data, key):
     cipher = AES.new(key, AES.MODE_EAX)
     nonce = cipher.nonce
     ciphertext, tag = cipher.encrypt_and_digest(data)
-    return nonce + ciphertext + tag
+    encrypted_data = nonce + tag + ciphertext
+    return encrypted_data
 
 
 def decrypt(encrypted_data, key):
     nonce = encrypted_data[:16]
-    tag = encrypted_data[-16:]
-    ciphertext = encrypted_data[16:-16]
+    tag = encrypted_data[16:32]
+    ciphertext = encrypted_data[32:]
     cipher = AES.new(key, AES.MODE_EAX, nonce=nonce)
     return cipher.decrypt_and_verify(ciphertext, tag)
 
@@ -402,7 +403,7 @@ def run_federated_client(client_id, cycle):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.settimeout(180)  # Extended timeout
 
-            # Coba beberapa kali untuk terhubung ke server
+            # Connect to server with retry logic
             max_retries = 5
             retry_delay = 2
 
@@ -423,28 +424,50 @@ def run_federated_client(client_id, cycle):
             # Kirim model terlatih
             with open(local_model_path, 'rb') as f:
                 model_bytes = f.read()
-            encrypted_data = encrypt(model_bytes, KEY)
+            encrypted_data = encrypt_data(model_bytes, KEY)
 
+            # Send data length first
+            s.sendall(len(encrypted_data).to_bytes(4, byteorder='big'))
+
+            # Then send actual data
             s.sendall(encrypted_data)
             print(f"📤 Model lokal berhasil dikirim ke server")
 
             # Kirim metrik validasi
-            encrypted_metrics = encrypt(json.dumps(validation_metrics).encode('utf-8'), KEY)
+            encrypted_metrics = encrypt_data(json.dumps(validation_metrics).encode('utf-8'), KEY)
+
+            # Send metrics length first
+            s.sendall(len(encrypted_metrics).to_bytes(4, byteorder='big'))
+
+            # Then send metrics data
             s.sendall(encrypted_metrics)
             print(f"📤 Metrik validasi berhasil dikirim ke server")
 
             # Terima model global
             print(f"⏳ Menunggu model global dari server...")
+
+            # First receive data length
+            length_data = s.recv(4)
+            if not length_data:
+                raise ConnectionError("Koneksi ditutup oleh server sebelum menerima panjang data")
+
+            data_length = int.from_bytes(length_data, byteorder='big')
+            print(f"Akan menerima {data_length} bytes dari server")
+
+            # Then receive actual data
             encrypted_response = b''
-            while True:
-                try:
-                    chunk = s.recv(65536)
-                    if not chunk:
-                        break
-                    encrypted_response += chunk
-                except socket.timeout:
-                    print("⚠️ Timeout menunggu respons dari server")
+            received_length = 0
+
+            while received_length < data_length:
+                chunk = s.recv(min(65536, data_length - received_length))
+                if not chunk:
                     break
+                encrypted_response += chunk
+                received_length += len(chunk)
+                print(f"Diterima {received_length}/{data_length} bytes")
+
+            if received_length < data_length:
+                print(f"⚠️ Penerimaan data tidak lengkap: {received_length}/{data_length} bytes")
 
             if encrypted_response:
                 global_model_path = f'global_model_cycle_{cycle + 1}.pt'
