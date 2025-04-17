@@ -452,11 +452,15 @@ def run_federated_client(client_id, cycle):
                 raise ConnectionError("Koneksi ditutup oleh server sebelum menerima panjang data")
 
             data_length = int.from_bytes(length_data, byteorder='big')
-            print(f"Akan menerima {data_length/1048576:.2f} MB dari server")
+            print(f"Akan menerima {data_length / 1048576:.2f} MB dari server")
 
-            # Then receive actual data
+            # Then receive actual data with progress bar
             encrypted_response = b''
             received_length = 0
+            bar_length = 50
+            last_percent = -1
+
+            print("Downloading global model: ", end='', flush=True)
 
             while received_length < data_length:
                 chunk = s.recv(min(65536, data_length - received_length))
@@ -464,10 +468,22 @@ def run_federated_client(client_id, cycle):
                     break
                 encrypted_response += chunk
                 received_length += len(chunk)
-                print(f"Received {received_length/1048576:.2f}/{data_length/1048576:.2f} MB")
+
+                # Update progress bar
+                percent = int((received_length / data_length) * 100)
+                if percent > last_percent:
+                    bars = '=' * int((percent / 100) * bar_length)
+                    spaces = ' ' * (bar_length - len(bars))
+                    sys.stdout.write(
+                        f"\rDownloading global model: [{bars}{spaces}] {percent}% ({received_length / 1048576:.2f}/{data_length / 1048576:.2f} MB)")
+                    sys.stdout.flush()
+                    last_percent = percent
+
+            print()  # New line after progress bar
 
             if received_length < data_length:
-                print(f"⚠️ Penerimaan data tidak lengkap: {received_length/1048576:.2f}/{data_length/1048576:.2f} MB")
+                print(
+                    f"⚠️ Penerimaan data tidak lengkap: {received_length / 1048576:.2f}/{data_length / 1048576:.2f} MB")
 
             if encrypted_response:
                 global_model_path = f'global_model_cycle_{cycle + 1}.pt'

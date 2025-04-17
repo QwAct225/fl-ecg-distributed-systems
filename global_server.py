@@ -1,5 +1,6 @@
 # global_server.py
 import socket
+import sys
 import threading
 import time
 import torch
@@ -247,20 +248,36 @@ def handle_client(conn, addr, global_model, client_models, client_data, client_i
         length_data = conn.recv(4)
         if length_data:
             data_length = int.from_bytes(length_data, byteorder='big')
-            print(f"Expected data length: {data_length/1048576:.2f} MB")
+            print(f"Expected data length: {data_length / 1048576:.2f} MB")
 
         # Now receive the actual data
         received_length = 0
+        print("Downloading client model: ", end='', flush=True)
+        bar_length = 50
+        last_percent = -1
+
         while received_length < data_length:
             chunk = conn.recv(min(65536, data_length - received_length))
             if not chunk:
                 break
             encrypted_data += chunk
             received_length += len(chunk)
-            print(f"Received {received_length/1048576:.2f}/{data_length/1048576:.2f} MB")
+
+            # Update progress bar
+            percent = int((received_length / data_length) * 100)
+            if percent > last_percent:
+                bars = '=' * int((percent / 100) * bar_length)
+                spaces = ' ' * (bar_length - len(bars))
+                sys.stdout.write(
+                    f"\rDownloading global model: [{bars}{spaces}] {percent}% ({received_length / 1048576:.2f}/{data_length / 1048576:.2f} MB)")
+                sys.stdout.flush()
+                last_percent = percent
+
+        print()  # New line after progress bar
 
         if not encrypted_data or received_length < data_length:
-            raise ValueError(f"Incomplete data received: {received_length/1048576:.2f}/{data_length/1048576:.2f} MB")
+            raise ValueError(
+                f"Incomplete data received: {received_length / 1048576:.2f}/{data_length / 1048576:.2f} MB")
 
         # Decrypt client model
         decrypted_data = decrypt(encrypted_data, KEY)
@@ -453,7 +470,7 @@ if __name__ == '__main__':
         client_models = [None] * num_clients
 
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.settimeout(180)  # Extended timeout
+            s.settimeout(1800)  # Extended timeout
             s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)  # Allow reuse of address
             s.bind((HOST, PORT))
             s.listen()
