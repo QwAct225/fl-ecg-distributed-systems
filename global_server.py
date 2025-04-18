@@ -1,5 +1,6 @@
 # global_server.py
 import socket
+import sys
 import threading
 import time
 import torch
@@ -247,20 +248,27 @@ def handle_client(conn, addr, global_model, client_models, client_data, client_i
         length_data = conn.recv(4)
         if length_data:
             data_length = int.from_bytes(length_data, byteorder='big')
-            print(f"Expected data length: {data_length/1048576:.2f} MB")
+            print(f"Expected data length: {data_length / 1048576:.2f} MB")
 
         # Now receive the actual data
         received_length = 0
+        print("Downloading client model: ", end='', flush=True)
+        bar_length = 50
+        last_percent = -1
+
         while received_length < data_length:
-            chunk = conn.recv(min(65536, data_length - received_length))
+            chunk = s.recv(min(65536, data_length - received_length))
             if not chunk:
                 break
             encrypted_data += chunk
             received_length += len(chunk)
-            print(f"Received {received_length/1048576:.2f}/{data_length/1048576:.2f} MB")
+
+            # Update progress bar
+            display_progress(received_length, data_length, "Downloading global model")  # New line after progress bar
 
         if not encrypted_data or received_length < data_length:
-            raise ValueError(f"Incomplete data received: {received_length/1048576:.2f}/{data_length/1048576:.2f} MB")
+            raise ValueError(
+                f"Incomplete data received: {received_length / 1048576:.2f}/{data_length / 1048576:.2f} MB")
 
         # Decrypt client model
         decrypted_data = decrypt(encrypted_data, KEY)
@@ -366,6 +374,29 @@ def handle_client(conn, addr, global_model, client_models, client_data, client_i
         conn.close()
 
 
+def display_progress(received, total, description="Downloading", bar_length=50):
+    """Display an interactive single-line progress bar."""
+    percentage = min(100, int((received / total) * 100))
+    filled_length = int(bar_length * percentage // 100)
+    bar = '█' * filled_length + '░' * (bar_length - filled_length)
+
+    # Calculate speed and format size
+    received_mb = received / 1048576
+    total_mb = total / 1048576
+
+    # Create the progress line
+    progress_line = f"\r{description}: |{bar}| {percentage}% ({received_mb:.2f}/{total_mb:.2f} MB)"
+
+    # Print and flush to update in place
+    sys.stdout.write(progress_line)
+    sys.stdout.flush()
+
+    # Add newline if completed
+    if percentage == 100:
+        sys.stdout.write("\n")
+        sys.stdout.flush()
+
+
 def load_client_validation_data():
     """Create validation datasets for cross-silo validation."""
     client_datasets = []
@@ -453,7 +484,7 @@ if __name__ == '__main__':
         client_models = [None] * num_clients
 
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.settimeout(180)  # Extended timeout
+            s.settimeout(1800)  # Extended timeout
             s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)  # Allow reuse of address
             s.bind((HOST, PORT))
             s.listen()

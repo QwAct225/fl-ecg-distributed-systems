@@ -17,7 +17,7 @@ import json
 import time
 import random
 
-HOST = '127.0.0.1'  # Changed to match server
+HOST = '10.34.100.116'  # Changed to match server
 PORT = 65432
 KEY = b'Sixteen byte key'
 MAX_CYCLES = 3  # Maximum number of federated learning cycles
@@ -327,6 +327,29 @@ def evaluate_model(model, loader):
     }
 
 
+def display_progress(received, total, description="Downloading", bar_length=50):
+    """Display an interactive single-line progress bar."""
+    percentage = min(100, int((received / total) * 100))
+    filled_length = int(bar_length * percentage // 100)
+    bar = '█' * filled_length + '░' * (bar_length - filled_length)
+
+    # Calculate speed and format size
+    received_mb = received / 1048576
+    total_mb = total / 1048576
+
+    # Create the progress line
+    progress_line = f"\r{description}: |{bar}| {percentage}% ({received_mb:.2f}/{total_mb:.2f} MB)"
+
+    # Print and flush to update in place
+    sys.stdout.write(progress_line)
+    sys.stdout.flush()
+
+    # Add newline if completed
+    if percentage == 100:
+        sys.stdout.write("\n")
+        sys.stdout.flush()
+
+
 def add_noise(model, sensitivity, epsilon):
     """Menambahkan noise ke parameter model untuk differential privacy."""
     with torch.no_grad():
@@ -349,7 +372,6 @@ def run_federated_client(client_id, cycle):
     # Model lokal
     local_model = EcgResNet34(input_channels=2)
 
-    # Jika bukan siklus pertama, muat model global dari siklus sebelumnya
     if use_previous_model:
         try:
             global_model_path = f'global_model_cycle_{cycle}.pt'
@@ -452,11 +474,15 @@ def run_federated_client(client_id, cycle):
                 raise ConnectionError("Koneksi ditutup oleh server sebelum menerima panjang data")
 
             data_length = int.from_bytes(length_data, byteorder='big')
-            print(f"Akan menerima {data_length/1048576:.2f} MB dari server")
+            print(f"Akan menerima {data_length / 1048576:.2f} MB dari server")
 
-            # Then receive actual data
+            # Then receive actual data with progress bar
             encrypted_response = b''
             received_length = 0
+            bar_length = 50
+            last_percent = -1
+
+            print("Downloading global model: ", end='', flush=True)
 
             while received_length < data_length:
                 chunk = s.recv(min(65536, data_length - received_length))
@@ -464,10 +490,13 @@ def run_federated_client(client_id, cycle):
                     break
                 encrypted_response += chunk
                 received_length += len(chunk)
-                print(f"Received {received_length/1048576:.2f}/{data_length/1048576:.2f} MB")
+
+                # Update progress bar
+                display_progress(received_length, data_length, "Downloading global model")
 
             if received_length < data_length:
-                print(f"⚠️ Penerimaan data tidak lengkap: {received_length/1048576:.2f}/{data_length/1048576:.2f} MB")
+                print(
+                    f"⚠️ Penerimaan data tidak lengkap: {received_length / 1048576:.2f}/{data_length / 1048576:.2f} MB")
 
             if encrypted_response:
                 global_model_path = f'global_model_cycle_{cycle + 1}.pt'
