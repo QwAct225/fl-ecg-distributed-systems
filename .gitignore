@@ -7,14 +7,21 @@ client.log
 server.log
 
 client1_metrics_cycle1.json
+client1_metrics_cycle2.json
 client2_metrics_cycle1.json
+client2_metrics_cycle2.json
+client_model_1_cycle_1.pt
 client_model_1_cycle_2.pt
+client_model_2_cycle_1.pt
 client_model_2_cycle_2.pt
+federated_metrics_cycle_1.json
 federated_metrics_cycle_2.json
 federated_metrics_final.json
 global_model_cycle_1.pt
 global_model_cycle_1.pt.enc
 global_model_cycle_2.pt
+global_model_cycle_2.pt.enc
+global_model_initial.pt
 
 # client 1
 local_model_client1_cycle1.pt
